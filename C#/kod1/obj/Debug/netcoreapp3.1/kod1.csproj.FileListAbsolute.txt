@@ -1,0 +1,13 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.exe
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.runtimeconfig.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.runtimeconfig.dev.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\bin\Debug\netcoreapp3.1\kod1.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.genruntimeconfig.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\C#\kod1\obj\Debug\netcoreapp3.1\kod1.csprojAssemblyReference.cache
