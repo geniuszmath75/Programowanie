@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1585661682 source:c:\users\janus\onedrive\pulpit\programowanie\wyra¿enie_reg\main.cpp
+	<iostream>
+	<regex>
+

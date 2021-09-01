@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1588001702 source:c:\users\janus\onedrive\pulpit\programowanie\szyfr_cezara\main.cpp
+	<string>
+	<ctime>
+	<cstdlib>
+	<cstdio>
+
+1588001683 source:c:\users\janus\onedrive\pulpit\programowanie\szyfr_cezara\main1.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<cstdio>
+
