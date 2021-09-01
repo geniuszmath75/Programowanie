@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1586188953 source:c:\users\janus\onedrive\pulpit\liczby_pseudolosowe\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1591883399 source:c:\users\janus\onedrive\pulpit\programowanie\liczby_pseudolosowe\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1602946494 source:c:\users\janus\onedrive\pulpit\programowanie\c++\liczby_pseudolosowe\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
