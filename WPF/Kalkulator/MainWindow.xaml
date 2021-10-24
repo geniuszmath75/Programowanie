@@ -1,0 +1,31 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="Kalkulator" Height="600" Width="540">
+    <Grid>
+        <Button x:Name="Dzielenie" Content="/" HorizontalAlignment="Left" Margin="415,120,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" FontWeight="Normal" Background="#FF00FF15" Click="Dzielenie_Click"/>
+        <Button x:Name="Mnożenie" Content="*" HorizontalAlignment="Left" Margin="415,210,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" Background="#FF00FF15" Click="Mnożenie_Click"/>
+        <Button x:Name="Odejmowanie" Content="-" HorizontalAlignment="Left" Margin="415,300,0,0" VerticalAlignment="Top" FontFamily="Microsoft YaHei" FontSize="35" Width="100" Height="60" Background="#FF00FF15" Click="Odejmowanie_Click"/>
+        <Button x:Name="Dodawanie" Content="+" HorizontalAlignment="Left" Margin="415,390,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Microsoft YaHei" Width="100" Height="60" Background="#FF00FF15" Click="Dodawanie_Click"/>
+        <Button x:Name="Wynik" Content="=" HorizontalAlignment="Left" Margin="415,480,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Microsoft YaHei" Width="100" Height="60" Background="#FFFF4900" Click="Wynik_Click"/>
+        <Button x:Name="Cyfra1" Content="1" HorizontalAlignment="Left" Margin="25,210,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" Background="#FF00B1FF" Click="Cyfra1_Click"/>
+        <Button x:Name="Cyfra2" Content="2" HorizontalAlignment="Left" Margin="155,210,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" Background="#FF00B1FF" Click="Cyfra2_Click"/>
+        <Button x:Name="Cyfra3" Content="3" HorizontalAlignment="Left" Margin="285,210,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="35" FontFamily="Microsoft YaHei" Background="#FF00B1FF" Click="Cyfra3_Click"/>
+        <Button x:Name="Cyfra4" Content="4" HorizontalAlignment="Left" Margin="25,300,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Microsoft YaHei" Width="100" Height="60" Background="#FF00B1FF" Click="Cyfra4_Click"/>
+        <Button x:Name="Cyfra5" Content="5" HorizontalAlignment="Left" Margin="155,300,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="35" FontFamily="Microsoft YaHei" Background="#FF00B1FF" Click="Cyfra5_Click"/>
+        <Button x:Name="Cyfra6" Content="6" HorizontalAlignment="Left" Margin="285,300,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Microsoft YaHei" Width="100" Height="60" Background="#FF00B1FF" Click="Cyfra6_Click"/>
+        <Button x:Name="Cyfra7" Content="7" HorizontalAlignment="Left" Margin="25,390,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="35" FontFamily="Microsoft YaHei" Background="#FF00B1FF" Click="Cyfra7_Click"/>
+        <Button x:Name="Cyfra8" Content="8" HorizontalAlignment="Left" Margin="155,390,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="35" FontFamily="Microsoft YaHei" Background="#FF00B1FF" Click="Cyfra8_Click"/>
+        <Button x:Name="Cyfra9" Content="9" HorizontalAlignment="Left" Margin="285,390,0,0" VerticalAlignment="Top" Width="100" Height="60" FontSize="35" FontFamily="Microsoft YaHei" Background="#FF00B1FF" Click="Cyfra9_Click"/>
+        <Button x:Name="Cyfra0" Content="0" HorizontalAlignment="Left" Margin="155,480,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Microsoft YaHei" Width="100" Height="60" Background="#FF00B1FF" Click="Cyfra0_Click"/>
+        <Button x:Name="Przecinek" Content="," HorizontalAlignment="Left" Margin="285,480,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" Background="#FFFDFF00" Click="Przecinek_Click"/>
+        <Button x:Name="MinusPlus" Content="+/-" HorizontalAlignment="Left" Margin="25,480,0,0" VerticalAlignment="Top" Width="100" Height="60" FontFamily="Microsoft YaHei" FontSize="35" Background="#FFFDFF00"/>
+        <Label x:Name="dzialanie" Content="" HorizontalAlignment="Left" Margin="25,82,30,0" VerticalAlignment="Top" FontFamily="Microsoft YaHei" Foreground="#FFCCCCCC" Width="490" Height="26"/>
+        <Label x:Name="poleWpisuj" Content="" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Background="#FFBBBBBB" Width="490" Height="60" FontSize="35" FontFamily="Microsoft YaHei" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

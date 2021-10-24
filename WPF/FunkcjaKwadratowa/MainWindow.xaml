@@ -1,0 +1,27 @@
+﻿<Window x:Class="FunkcjaKwadratowa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunkcjaKwadratowa"
+        mc:Ignorable="d"
+        Title="Funkcja kwadratowa" Height="600" Width="800">
+    <Grid>
+        <Label x:Name="funkcja" Content="f(x) = ax^2 + bx + c" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="25"/>
+        <Label x:Name="a" Content="a" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label x:Name="b" Content="b" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label x:Name="c" Content="c" HorizontalAlignment="Left" Margin="600,100,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox x:Name="DanaA" HorizontalAlignment="Left" Margin="150,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial" FontSize="25"/>
+        <TextBox x:Name="DanaB" HorizontalAlignment="Center" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" FontFamily="Arial" Width="120"/>
+        <TextBox x:Name="DanaC" HorizontalAlignment="Left" Margin="550,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Arial" FontSize="25"/>
+        <Button x:Name="Oblicz" Content="Oblicz" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial" FontSize="25" FontWeight="Bold" Width="100" Height="50" Margin="0,190,0,0" Click="Oblicz_Click"/>
+        <Label x:Name="wynikWzor" Content="" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="25" FontWeight="Bold"/>
+        <Label x:Name="wzor" Content="Wzór funkcji:" HorizontalAlignment="Left" Margin="130,250,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Arial"/>
+        <Label x:Name="delta" Content="Delta wynosi:" HorizontalAlignment="Left" Margin="130,300,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="25"/>
+        <Label x:Name="wynikDelta" Content="" HorizontalAlignment="Left" Margin="295,300,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Arial" FontWeight="Bold"/>
+        <Label x:Name="pierwiastkiLiczba" Content="Liczba pierwiastków:" HorizontalAlignment="Left" Margin="130,350,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Arial"/>
+        <Label x:Name="pierwiastkiWynik" Content="" HorizontalAlignment="Center" Margin="20,350,30,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="25" FontWeight="Bold" Width="30" Height="40"/>
+        <Label x:Name="pierwiastkiWypisz" Content="" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Arial" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
