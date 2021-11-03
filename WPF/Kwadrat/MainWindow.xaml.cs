@@ -23,7 +23,6 @@ namespace Kwadrat
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         public String opcja;
@@ -48,7 +47,7 @@ namespace Kwadrat
         {
             if(opcja == "Kwadrat")
             {
-                double bok = 0;
+                double bok;
 
                 if (double.TryParse(txtBok.Text, out bok) && bok >= 0)
                 {
@@ -68,7 +67,7 @@ namespace Kwadrat
         {
             if(opcja == "Koło")
             {
-                double r = 0;
+                double r;
 
                 if (double.TryParse(txtPromien.Text, out r) && r >= 0)
                 {
@@ -82,29 +81,6 @@ namespace Kwadrat
                 }
             }
         }
-            
-        //private void txtPromien_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    switch(opcja)
-        //    {
-        //        case "Koło":
-        //            double r;
-
-        //            if (double.TryParse(txtPromien.Text, out r) && r >= 0)
-        //            {
-        //                txtPole2.Text = (Math.PI * Math.Pow(r, 2)).ToString();
-        //                txtObwod2.Text = (2 * Math.PI * r).ToString();
-        //                lblKomunikat.Content = String.Empty;
-        //            }
-        //            else
-        //            {
-        //                lblKomunikat.Content = "Wpisz liczbę dodatnią";
-        //            }
-        //            break;
-        //    }
-        //}
-
-        
 
         private void btnWyczysc_Click(object sender, RoutedEventArgs e)
         {
@@ -117,15 +93,14 @@ namespace Kwadrat
             txtPrzybliz.Text = String.Empty;
             lblKomunikat.Content = "Wpisz dane";
 
-            wynik.Content = opcja;
         }
         private void btnPrzybliz_Click(object sender, RoutedEventArgs e)
         {
             int liczba = int.Parse(txtPrzybliz.Text);
-            double pole1 = 0;
-            double pole2 = 0;
-            double obwod = 0;
-            double obwod2 = 0;
+            double pole1;
+            double pole2;
+            double obwod;
+            double obwod2;
             if (double.TryParse(txtPole.Text, out pole1) && pole1 > 0)
             {
                 txtPole.Text = Math.Round(pole1, liczba, MidpointRounding.AwayFromZero).ToString();

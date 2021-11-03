@@ -8,11 +8,7 @@
         Title="MainWindow" Height="450" Width="806">
     <Grid Background="LightBlue">
         <Label x:Name="wybor" Content="Wybierz figurę:" HorizontalAlignment="Left" Margin="81,69,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <ComboBox x:Name="cBoxFigura" Foreground="Purple" HorizontalAlignment="Left" Margin="330,70,0,0" VerticalAlignment="Top" Width="120" Height="25" FontSize="17" FontWeight="Bold" SelectionChanged="cBoxFigura_SelectionChanged">
-            <ComboBoxItem x:Name="itemKwadrat" Background="LightGreen" Content="Kwadrat" IsSelected="True"></ComboBoxItem>
-            <ComboBoxItem x:Name="itemKolo" Background="LightSlateGray" Content="Koło" ></ComboBoxItem>
-        </ComboBox>
-        <Grid x:Name="polaKwadrat" HorizontalAlignment="Left" >
+        <Grid x:Name="polaKwadrat" HorizontalAlignment="Left">
             <Label x:Name="lblBok" Content="Długość boku:" HorizontalAlignment="Left" Margin="81,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
             <Label x:Name="lblPole" Content="Pole kwadratu:" HorizontalAlignment="Left" Margin="81,150,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
             <Label x:Name="lblObwod" Content="Obwód kwadratu:" HorizontalAlignment="Left" Margin="81,200,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
@@ -21,8 +17,8 @@
             <TextBox x:Name="txtPole" HorizontalAlignment="Left" Margin="330,155,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" IsEnabled="False" Height="30" BorderBrush="Black"/>
             <TextBox x:Name="txtObwod" HorizontalAlignment="Left" Margin="330,205,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" IsEnabled="False" Height="30" BorderBrush="Black"/>
         </Grid>
-
-        <Grid x:Name="polaKolo" Visibility="Hidden" HorizontalAlignment="Left" Panel.ZIndex="-1">
+            
+        <Grid x:Name="polaKolo" Visibility="Hidden" HorizontalAlignment="Left">
             <Label x:Name="lblPromien" Content="Długość promienia:" HorizontalAlignment="Left" Margin="81,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
             <Label x:Name="lblPole2" Content="Pole koła:" HorizontalAlignment="Left" Margin="81,150,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
             <Label x:Name="lblObwod2" Content="Obwód koła:" HorizontalAlignment="Left" Margin="81,200,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
@@ -37,7 +33,10 @@
         <TextBox x:Name="txtPrzybliz" HorizontalAlignment="Left" Margin="330,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Height="30" BorderBrush="Black"/>
         <Button x:Name="btnPrzybliz" Content="Przybliż" HorizontalAlignment="Left" Margin="470,255,0,0" Width="120" Height="30" FontWeight="Bold" FontSize="20" Background="#FF65BC2E" VerticalAlignment="Top" Click="btnPrzybliz_Click"/>
         <Button  x:Name="btnWyczysc" Background="Blue" Content="Wyczyść" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Width="140" Click="btnWyczysc_Click" Height="40"/>
-        <Label x:Name="wynik" Content="Label" HorizontalAlignment="Left" Margin="648,360,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cBoxFigura" Foreground="Purple" HorizontalAlignment="Left" Margin="330,70,0,0" VerticalAlignment="Top" Width="120" Height="25" FontSize="17" FontWeight="Bold" SelectionChanged="cBoxFigura_SelectionChanged">
+            <ComboBoxItem x:Name="itemKwadrat" Background="OrangeRed" Content="Kwadrat" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem x:Name="itemKolo" Background="Lightgreen" Content="Koło" ></ComboBoxItem>
+        </ComboBox>
 
 
     </Grid>
