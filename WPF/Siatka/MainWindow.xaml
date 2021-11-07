@@ -1,0 +1,100 @@
+﻿<Window x:Class="Siatka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Siatka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="0">Przycisk 1</Button>
+        <Button Grid.Column="1" Grid.Row="0">Przycisk 2</Button>
+        <Button Grid.Column="2" Grid.Row="0">Przycisk 3</Button>-->
+
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="0">Przycisk 1</Button>
+        <Button Grid.Column="1" Grid.Row="0">Przycisk 2</Button>
+        <Button Grid.ColumnSpan="2" Grid.Row="1">Przycisk 3</Button>-->
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+ 
+        <Label Grid.ColumnSpan="4" Grid.Row="0" Content="FILMY" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="25" BorderBrush="Black" BorderThickness="4" Background="#FFE71B1B"></Label>
+        <Label Grid.Column="0" Grid.Row="1" Content="Tytuł filmu" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="#FF54BA45" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="1" Grid.Row="1" Content="Gatunek" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="#FF39C0B4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="1" Content="Bohater" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="#FF4268D1" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="1" Content="Krótki opis" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="#FF8B32D0" BorderBrush="Black" BorderThickness="4"></Label>
+
+        <Label Grid.Column="0" Grid.Row="2" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFDDDDDD" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="3" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFBBBBBB" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="4" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF999999" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Content="HORROR" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFE8FA09" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="2" Content="asfasf" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFDDDDDD" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="3" Content="fasasf" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFBBBBBB" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="4" Content="asff" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FF999999" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="2" Content="faasf" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFDDDDDD" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="3" Content="asfsav" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFBBBBBB" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="4" Content="safs" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FF999999" BorderBrush="Black" BorderThickness="4"></Label>
+
+        <Label Grid.Column="0" Grid.Row="5" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFD6E8F9" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="6" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF9AC8F4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="7" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF68B0F4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="1" Grid.Row="5" Grid.RowSpan="3" Content="KOMEDIA" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FFF48514" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="5" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFD6E8F9" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="6" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF9AC8F4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="7" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF68B0F4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="5" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFD6E8F9" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="6" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF9AC8F4" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="7" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FF68B0F4" BorderBrush="Black" BorderThickness="4"></Label>
+
+        <Label Grid.Column="0" Grid.Row="8" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFEDD382" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="9" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFB19A52" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="0" Grid.Row="10" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFE6B722" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="1" Grid.Row="8" Grid.RowSpan="3" Content="PRZYGODOWY" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#FF35CBA8" BorderThickness="4" BorderBrush="Black"></Label>
+        <Label Grid.Column="2" Grid.Row="8" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFEDD382" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="9" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFB19A52" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="2" Grid.Row="10" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFE6B722" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="8" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFEDD382" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="9" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFB19A52" BorderBrush="Black" BorderThickness="4"></Label>
+        <Label Grid.Column="3" Grid.Row="10" Content="asfas" HorizontalContentAlignment="Center" FontSize="20" Background="#FFE6B722" BorderBrush="Black" BorderThickness="4"></Label>
+    </Grid>
+</Window>
