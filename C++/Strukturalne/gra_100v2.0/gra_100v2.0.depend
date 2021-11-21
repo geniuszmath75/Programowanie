@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1637242881 source:c:\users\janus\onedrive\pulpit\programowanie\c++\strukturalne\gra_100v2.0\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+
