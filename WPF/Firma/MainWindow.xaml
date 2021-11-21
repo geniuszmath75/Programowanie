@@ -1,0 +1,238 @@
+﻿<Window x:Class="Firma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Firma"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="2">
+            <MenuItem Header="_System">
+                <MenuItem Header="Konfiguracja">
+                    <MenuItem Header="_Logowanie"/>
+                    <MenuItem Header="_Zmiana firmy"/>
+                    <MenuItem Header="_Konfiguracja"/>
+                    <MenuItem Header="_Odśwież konfigurację"/>
+                    <MenuItem Header="_Zmiana hasła"/>
+                    <MenuItem Header="_Ustawienie drukarki"/>
+                </MenuItem>
+                <MenuItem Header="Raportowanie">
+                    <MenuItem Header="_Przygotuj logi do wysłania"/>
+                    <MenuItem Header="_Otwórz folder z logami"/>
+                </MenuItem>
+                <MenuItem Header="Koniec">
+                    <MenuItem Header="_Koniec pracy"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Ogólne">
+                <MenuItem Header="Słowniki">
+                    <MenuItem Header="Kontrahenci"/>
+                    <MenuItem Header="Nowy kontrachent"/>
+                    <MenuItem Header="Pracownicy"/>
+                    <MenuItem Header="Cennik"/>
+                    <MenuItem Header="Nowy towar"/>
+                    <MenuItem Header="Grupy towarowe"/>
+                    <MenuItem Header="Rabaty"/>
+                    <MenuItem Header="Kategorie"/>
+                    <MenuItem Header="Atrybuty"/>
+                    <MenuItem Header="Wymiary opisu analitycznego"/>
+                    <MenuItem Header="Inne"/>
+                </MenuItem>
+                <MenuItem Header="Przesyłki">
+                    <MenuItem Header="Nadanie przesyłki"/>
+                </MenuItem>
+                <MenuItem Header="Waluty">
+                    <MenuItem Header="Kursy walut"/>
+                    <MenuItem Header="Pobieranie wskaźników"/>
+                    <MenuItem Header="Kalkulator wynagrodzeń"/>
+                </MenuItem>
+                <MenuItem Header="Dane osobowe">
+                    <MenuItem Header="Rejestry"/>
+                    <MenuItem Header="Słowniki"/>
+                    <MenuItem Header="Anonimizacja danych osobowych"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Handel">
+                <MenuItem Header="Handel">
+                    <MenuItem Header="Faktury"/>
+                    <MenuItem Header="Nowa faktura"/>
+                    <MenuItem Header="Paragony"/>
+                    <MenuItem Header="Nowy paragon"/>
+                    <MenuItem Header="Rezerwacje odbiorcy"/>
+                    <MenuItem Header="Faktury Pro Forma"/>
+                    <MenuItem Header="Sprzedaż dedykowana"/>
+                    <MenuItem Header="Faktury zakupu"/>
+                    <MenuItem Header="Zamówienia u dostawcy"/>
+                    <MenuItem Header="Inne"/>
+                </MenuItem>
+                <MenuItem Header="Magazyn">
+                    <MenuItem Header="Zasoby"/>
+                    <MenuItem Header="Raport braków"/>
+                    <MenuItem Header="Wydania zewnętrzne"/>
+                    <MenuItem Header="Przyjęcia zewnęrzne"/>
+                    <MenuItem Header="Inne"/>
+                </MenuItem>
+                <MenuItem Header="Więcej funkcji">
+                    <MenuItem Header="Uruchom sprzedaż w Internecie"/>
+                    <MenuItem Header="Pracuj mobilnie"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Kasa,Bank">
+                <MenuItem Header="Kasa i Bank">
+                    <MenuItem Header="Rejestry kasowe/bankowe"/>
+                    <MenuItem Header="Raporty kasowe/bankowe"/>
+                    <MenuItem Header="Zapisy kasowe/bankowe"/>
+                    <MenuItem Header="Preliminiarz płatności"/>
+                </MenuItem>
+                <MenuItem Header="Rozliczenia">
+                    <MenuItem Header="Rozliczenia podmiotu"/>
+                    <MenuItem Header="Dokumenty nierozliczone"/>
+                    <MenuItem Header="Dokumenty rozliczone"/>
+                    <MenuItem Header="Dokumenty kompensat"/>
+                    <MenuItem Header="Różnice kursowe"/>
+                </MenuItem>
+                <MenuItem Header="Dokumenty">
+                    <MenuItem Header="Noty odsetkowe"/>
+                    <MenuItem Header="Ponaglenia zapłaty"/>
+                    <MenuItem Header="Potwierdzenia salda"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Rejestry VAT">
+                <MenuItem Header="Rejestry VAT">
+                    <MenuItem Header="Rejestry VAT"/>
+                    <MenuItem Header="Struktura zakupów"/>
+                    <MenuItem Header="Ewidencja dodatkowa"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="JPK">
+                <MenuItem Header="JPK">
+                    <MenuItem Header="Pliki JPK"/>
+                    <MenuItem Header="Import do rej. VAT"/>
+                </MenuItem>
+                <MenuItem Header="Pomoc">
+                    <MenuItem Header="Informacje o JPK"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Narzędzia">
+                <MenuItem Header="Konfiguracja">
+                    <MenuItem Header="Blokady dostępu"/>
+                    <MenuItem Header="Filtry obowiązkowe GenRap"/>
+                    <MenuItem Header="Data bieżąca"/>
+                    <MenuItem Header="Data dla wydruków"/>
+                </MenuItem>
+                <MenuItem Header="Fiskalne">
+                    <MenuItem Header="Otwarcie szuflady"/>
+                    <MenuItem Header="Raport fiskalny"/>
+                </MenuItem>
+                <MenuItem Header="Narzędzia">
+                    <MenuItem Header="Kopia bezpieczeństwa"/>
+                    <MenuItem Header="Testy integralności"/>
+                    <MenuItem Header="Korekty danych"/>
+                    <MenuItem Header="Serwer bazy danych"/>
+                    <MenuItem Header="Kopiowanie danych"/>
+                </MenuItem>
+                <MenuItem Header="Importy">
+                    <MenuItem Header="Importy"/>
+                </MenuItem>
+                <MenuItem Header="Wymiana danych">
+                    <MenuItem Header="Detal/Mobile Sprzedaż"/>
+                </MenuItem>
+                <MenuItem Header="Historia">
+                    <MenuItem Header="Historia zmian"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Widok">
+                <MenuItem Header="Skórki">
+                    <MenuItem Width="20" Height="20" Margin="2" Background="Black"/>
+                    <MenuItem Width="20" Height="20" Margin="2" Background="White"/>
+                    <MenuItem Width="20" Height="20" Margin="2" Background="Azure"/>
+                </MenuItem>
+                <MenuItem Header="Czcionka">
+                    <MenuItem Header="Zmień ustawienia czcionki"/>
+                </MenuItem>
+                <MenuItem Header="Ustawienia okien">
+                    <MenuItem Header="Reset"/>
+                    <MenuItem Header="Reset aktywnego okna" IsEnabled="False"/>
+                    <MenuItem Header="Import"/>
+                    <MenuItem Header="Eksport"/>
+                </MenuItem>
+                <MenuItem Header="Ustawienia ogólne">
+                    <MenuItem Header="Praca w trybie jednego okna"/>
+                    <MenuItem Header="Filtrowanie list metodą `zaczyna się od`"/>
+                    <MenuItem Header="Duże ikony w nawigacji"/>
+                    <MenuItem Header="Efekty animacji"/>
+                    <MenuItem Header="Wyróżnienie aktywnego okna"/>
+                    <MenuItem Header="Podświetlenie zamknięcia programu"/>
+                    <MenuItem Header="Pokaż Menu Nawigacji"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Pomoc">
+                <MenuItem Header="Pomoc">
+                    <MenuItem Header="Pomoc"/>
+                    <MenuItem Header="Biuletyny"/>
+                    <MenuItem Header="Filmy instruktażowe"/>
+                    <MenuItem Header="FAQ"/>
+                    <MenuItem Header="Szkolenia"/>
+                    <MenuItem Header="System Obsługi Zgłoszeń"/>
+                    <MenuItem Header="Pomoc zdalna"/>
+                </MenuItem>
+                <MenuItem Header="O programie">
+                    <MenuItem Header="O programie"/>
+                    <MenuItem Header="Rejestracja programu"/>
+                </MenuItem>
+            </MenuItem>
+
+        </Menu>
+        <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="2">
+            <ToggleButton Width="35" Height="35" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka.png"/>
+            </ToggleButton>
+            <ToggleButton Width="35" Height="35" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka2.png"/>
+            </ToggleButton>
+            <ToggleButton Width="35" Height="35" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zapisz.png"/>
+            </ToggleButton>
+            <ToggleButton Width="35" Height="35" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\otwórz.png"/>
+            </ToggleButton>
+
+        </ToolBar>
+        <Border Grid.Row="2" Grid.Column="0">
+            <HeaderedContentControl Header="Operacje"/>
+
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1">
+            <HeaderedContentControl Header="Przestrzeń robocza"/>
+        
+        </Border>
+        <StatusBar Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
+            <StatusBarItem>
+                <TextBlock>Damian Judka</TextBlock>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock>ZSEM</TextBlock>
+                
+            </StatusBarItem>
+
+        </StatusBar>
+
+        
+    </Grid>
+</Window>
