@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637690679 source:c:\users\janus\onedrive\pulpit\programowanie\c++\strukturalne\wariacja\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
