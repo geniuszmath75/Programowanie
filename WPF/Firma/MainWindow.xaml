@@ -199,18 +199,46 @@
 
         </Menu>
         <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="2">
-            <ToggleButton Width="35" Height="35" Margin="2">
+            <ToggleButton Width="38" Height="38" Margin="2">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka.png"/>
             </ToggleButton>
-            <ToggleButton Width="35" Height="35" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka2.png"/>
             </ToggleButton>
-            <ToggleButton Width="35" Height="35" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zapisz.png"/>
             </ToggleButton>
-            <ToggleButton Width="35" Height="35" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\otwórz.png"/>
             </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rejestracja.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rabat.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\plikJPK.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\kopiaZapasowa.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\serwerDB.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\aktualizacjaDB.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\czcionka.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\pomoc.png"/>
+            </ToggleButton>
+            <ToggleButton Width="37" Height="37" Margin="2">
+                <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zakończ.png"/>
+            </ToggleButton>
+
 
         </ToolBar>
         <Border Grid.Row="2" Grid.Column="0">
