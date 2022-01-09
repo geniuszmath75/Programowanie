@@ -20,7 +20,7 @@
             <RowDefinition Height="30"/>
 
         </Grid.RowDefinitions>
-
+        
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="2">
             <MenuItem Header="_System">
                 <MenuItem Header="Konfiguracja">
@@ -196,7 +196,6 @@
                     <MenuItem Header="Rejestracja programu"/>
                 </MenuItem>
             </MenuItem>
-
         </Menu>
         <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="2">
             <ToggleButton Width="38" Height="38" Margin="2">
