@@ -22,32 +22,52 @@
         </Grid.RowDefinitions>
         
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="2">
-            <MenuItem Header="_System">
+            <MenuItem Header="_System" ToolTip="Zarządzanie kontem">
                 <MenuItem Header="Konfiguracja">
-                    <MenuItem Header="_Logowanie"/>
+                    <MenuItem Header="_Logowanie" InputGestureText="Ctrl + L"/>
                     <MenuItem Header="_Zmiana firmy"/>
                     <MenuItem Header="_Konfiguracja"/>
-                    <MenuItem Header="_Odśwież konfigurację"/>
+                    <MenuItem Header="_Odśwież konfigurację" InputGestureText="F5">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\refresh.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="_Zmiana hasła"/>
-                    <MenuItem Header="_Ustawienie drukarki"/>
+                    <MenuItem Header="Drukuj" InputGestureText="Ctrl + P">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\print.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
                 <MenuItem Header="Raportowanie">
                     <MenuItem Header="_Przygotuj logi do wysłania"/>
-                    <MenuItem Header="_Otwórz folder z logami"/>
+                    <MenuItem Header="_Otwórz folder z logami">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\otwórz.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
                 <MenuItem Header="Koniec">
-                    <MenuItem Header="_Koniec pracy"/>
+                    <MenuItem Header="_Koniec pracy" InputGestureText="Alt + F4">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zakończ.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="_Ogólne">
+            <MenuItem Header="_Ogólne" ToolTip="Podstawowe funkcje programu">
                 <MenuItem Header="Słowniki">
-                    <MenuItem Header="Kontrahenci"/>
-                    <MenuItem Header="Nowy kontrachent"/>
-                    <MenuItem Header="Pracownicy"/>
+                    <MenuItem Header="Kontrahenci" InputGestureText="Ctrl + K"/>
+                    <MenuItem Header="Nowy kontrachent" InputGestureText="Ctrl + Shift + K"/>
+                    <MenuItem Header="Pracownicy" InputGestureText="Ctrl + E"/>
                     <MenuItem Header="Cennik"/>
-                    <MenuItem Header="Nowy towar"/>
+                    <MenuItem Header="Nowy towar" InputGestureText="Ctrl + Shift + T"/>
                     <MenuItem Header="Grupy towarowe"/>
-                    <MenuItem Header="Rabaty"/>
+                    <MenuItem Header="Rabaty">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rabat.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="Kategorie"/>
                     <MenuItem Header="Atrybuty"/>
                     <MenuItem Header="Wymiary opisu analitycznego"/>
@@ -62,17 +82,17 @@
                     <MenuItem Header="Kalkulator wynagrodzeń"/>
                 </MenuItem>
                 <MenuItem Header="Dane osobowe">
-                    <MenuItem Header="Rejestry"/>
+                    <MenuItem Header="Rejestry" InputGestureText="Ctrl + R"/>
                     <MenuItem Header="Słowniki"/>
                     <MenuItem Header="Anonimizacja danych osobowych"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Handel">
+            <MenuItem Header="Handel" ToolTip="Handel z magazynem">
                 <MenuItem Header="Handel">
-                    <MenuItem Header="Faktury"/>
-                    <MenuItem Header="Nowa faktura"/>
-                    <MenuItem Header="Paragony"/>
-                    <MenuItem Header="Nowy paragon"/>
+                    <MenuItem Header="Faktury" InputGestureText="Ctrl + F"/>
+                    <MenuItem Header="Nowa faktura" InputGestureText="Ctrl + Shift + F"/>
+                    <MenuItem Header="Paragony" InputGestureText="Ctrl + Q"/>
+                    <MenuItem Header="Nowy paragon" InputGestureText="Ctrl + Shift + Q"/>
                     <MenuItem Header="Rezerwacje odbiorcy"/>
                     <MenuItem Header="Faktury Pro Forma"/>
                     <MenuItem Header="Sprzedaż dedykowana"/>
@@ -81,7 +101,7 @@
                     <MenuItem Header="Inne"/>
                 </MenuItem>
                 <MenuItem Header="Magazyn">
-                    <MenuItem Header="Zasoby"/>
+                    <MenuItem Header="Zasoby" InputGestureText="Ctrl + Enter + R"/>
                     <MenuItem Header="Raport braków"/>
                     <MenuItem Header="Wydania zewnętrzne"/>
                     <MenuItem Header="Przyjęcia zewnęrzne"/>
@@ -92,9 +112,9 @@
                     <MenuItem Header="Pracuj mobilnie"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Kasa,Bank">
+            <MenuItem Header="Kasa,Bank" ToolTip="Zarządzanie finansami">
                 <MenuItem Header="Kasa i Bank">
-                    <MenuItem Header="Rejestry kasowe/bankowe"/>
+                    <MenuItem Header="Rejestry kasowe/bankowe" InputGestureText="Ctrl + Enter + B"/>
                     <MenuItem Header="Raporty kasowe/bankowe"/>
                     <MenuItem Header="Zapisy kasowe/bankowe"/>
                     <MenuItem Header="Preliminiarz płatności"/>
@@ -112,25 +132,29 @@
                     <MenuItem Header="Potwierdzenia salda"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Rejestry VAT">
+            <MenuItem Header="Rejestry VAT" ToolTip="Ewidencja i rozliczenie VAT">
                 <MenuItem Header="Rejestry VAT">
-                    <MenuItem Header="Rejestry VAT"/>
+                    <MenuItem Header="Rejestry VAT" InputGestureText="Ctrl + Enter + V"/>
                     <MenuItem Header="Struktura zakupów"/>
                     <MenuItem Header="Ewidencja dodatkowa"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="JPK">
+            <MenuItem Header="JPK" ToolTip="Tworzenie i wysyłka plików JPK">
                 <MenuItem Header="JPK">
-                    <MenuItem Header="Pliki JPK"/>
+                    <MenuItem Header="Pliki JPK" InputGestureText="Ctrl + J">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\plikJPK.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="Import do rej. VAT"/>
                 </MenuItem>
                 <MenuItem Header="Pomoc">
                     <MenuItem Header="Informacje o JPK"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Narzędzia">
+            <MenuItem Header="Narzędzia" ToolTip="Narzędzia programu">
                 <MenuItem Header="Konfiguracja">
-                    <MenuItem Header="Blokady dostępu"/>
+                    <MenuItem Header="Blokady dostępu" InputGestureText="Ctrl + Shift + B"/>
                     <MenuItem Header="Filtry obowiązkowe GenRap"/>
                     <MenuItem Header="Data bieżąca"/>
                     <MenuItem Header="Data dla wydruków"/>
@@ -140,11 +164,19 @@
                     <MenuItem Header="Raport fiskalny"/>
                 </MenuItem>
                 <MenuItem Header="Narzędzia">
-                    <MenuItem Header="Kopia bezpieczeństwa"/>
+                    <MenuItem Header="Kopia bezpieczeństwa">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\kopiaZapasowa.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="Testy integralności"/>
                     <MenuItem Header="Korekty danych"/>
-                    <MenuItem Header="Serwer bazy danych"/>
-                    <MenuItem Header="Kopiowanie danych"/>
+                    <MenuItem Header="Serwer bazy danych" InputGestureText="Ctrl + Shift + D">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\serwerDB.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Kopiowanie danych" InputGestureText="Ctrl + Shift + C"/>
                 </MenuItem>
                 <MenuItem Header="Importy">
                     <MenuItem Header="Importy"/>
@@ -153,17 +185,21 @@
                     <MenuItem Header="Detal/Mobile Sprzedaż"/>
                 </MenuItem>
                 <MenuItem Header="Historia">
-                    <MenuItem Header="Historia zmian"/>
+                    <MenuItem Header="Historia zmian" InputGestureText="Ctrl + H"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Widok">
+            <MenuItem Header="Widok" ToolTip="Dostosuj widok programu">
                 <MenuItem Header="Skórki">
                     <MenuItem Width="20" Height="20" Margin="2" Background="Black"/>
                     <MenuItem Width="20" Height="20" Margin="2" Background="White"/>
                     <MenuItem Width="20" Height="20" Margin="2" Background="Azure"/>
                 </MenuItem>
                 <MenuItem Header="Czcionka">
-                    <MenuItem Header="Zmień ustawienia czcionki"/>
+                    <MenuItem Header="Zmień ustawienia czcionki">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\czcionka.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
                 <MenuItem Header="Ustawienia okien">
                     <MenuItem Header="Reset"/>
@@ -181,12 +217,20 @@
                     <MenuItem Header="Pokaż Menu Nawigacji"/>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Pomoc">
+            <MenuItem Header="Pomoc" ToolTip="Uzyskaj dostęp do pomocy technicznej">
                 <MenuItem Header="Pomoc">
-                    <MenuItem Header="Pomoc"/>
+                    <MenuItem Header="Pomoc" InputGestureText="F1">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\pomoc.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="Biuletyny"/>
                     <MenuItem Header="Filmy instruktażowe"/>
-                    <MenuItem Header="FAQ"/>
+                    <MenuItem Header="FAQ">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\faq.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                     <MenuItem Header="Szkolenia"/>
                     <MenuItem Header="System Obsługi Zgłoszeń"/>
                     <MenuItem Header="Pomoc zdalna"/>
@@ -198,43 +242,43 @@
             </MenuItem>
         </Menu>
         <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="2">
-            <ToggleButton Width="38" Height="38" Margin="2">
+            <ToggleButton Width="38" Height="38" Margin="2" ToolTip="Wstecz">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Dalej">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka2.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Zapisz">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zapisz.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Otwórz folder">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\otwórz.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Rejestracja">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rejestracja.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Rabaty">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rabat.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Pliki JPK">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\plikJPK.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Kopia zapasowa">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\kopiaZapasowa.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Serwer bazy danych">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\serwerDB.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Aktualizacja bazy danych">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\aktualizacjaDB.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Rozmiar czcionki">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\czcionka.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Pomoc">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\pomoc.png"/>
             </ToggleButton>
-            <ToggleButton Width="37" Height="37" Margin="2">
+            <ToggleButton Width="37" Height="37" Margin="2" ToolTip="Zakończ">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zakończ.png"/>
             </ToggleButton>
 
