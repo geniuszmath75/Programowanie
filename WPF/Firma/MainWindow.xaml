@@ -6,7 +6,48 @@
         xmlns:local="clr-namespace:Firma"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+
+    <Window.Resources>
+        <Style TargetType="MenuItem">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="FontFamily" Value="Helvetica"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+
+        <Style x:Key="DropMenu">
+            <Setter Property="Control.FontSize" Value="17"/>
+            <Setter Property="Control.Background" Value="LightBlue"/>
+        </Style>
+
+        <Style x:Key="DropMenuII">
+            <Setter Property="Control.FontSize" Value="17"/>
+            <Setter Property="Control.Background" Value="Azure"/>
+        </Style>
+
+        <Style x:Key="Header">
+            <Setter Property="Control.FontSize" Value="17"/>
+            <Setter Property="Control.FontFamily" Value="Times New Roman"/>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="ToolBar">
+            <Setter Property="Background" Value="Azure"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="5, 0"/>
+        </Style>
+
+        <Style x:Key="Operacje">
+            <Setter Property="Control.Background" Value="#0099ff"/>
+        </Style>
+
+        <Style x:Key="PrzestrzenRobocza">
+            <Setter Property="Control.Background" Value="#00ccff"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Background="LightBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
@@ -20,35 +61,35 @@
             <RowDefinition Height="30"/>
 
         </Grid.RowDefinitions>
-        
-        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="2">
+
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" Background="Blue" HorizontalAlignment="Center">
             <MenuItem Header="_System" ToolTip="Zarządzanie kontem">
-                <MenuItem Header="Konfiguracja">
-                    <MenuItem Header="_Logowanie" InputGestureText="Ctrl + L"/>
-                    <MenuItem Header="_Zmiana firmy"/>
-                    <MenuItem Header="_Konfiguracja"/>
-                    <MenuItem Header="_Odśwież konfigurację" InputGestureText="F5">
+                <MenuItem Header="Konfiguracja" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="_Logowanie" InputGestureText="Ctrl + L" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="_Zmiana firmy" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="_Konfiguracja" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="_Odśwież konfigurację" InputGestureText="F5" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\refresh.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Zmiana hasła"/>
-                    <MenuItem Header="Drukuj" InputGestureText="Ctrl + P">
+                    <MenuItem Header="_Zmiana hasła" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Drukuj" InputGestureText="Ctrl + P" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\print.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Raportowanie">
-                    <MenuItem Header="_Przygotuj logi do wysłania"/>
-                    <MenuItem Header="_Otwórz folder z logami">
+                <MenuItem Header="Raportowanie" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="_Przygotuj logi do wysłania" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="_Otwórz folder z logami" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\otwórz.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Koniec">
-                    <MenuItem Header="_Koniec pracy" InputGestureText="Alt + F4">
+                <MenuItem Header="Koniec" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="_Koniec pracy" InputGestureText="Alt + F4" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\zakończ.png"/>
                         </MenuItem.Icon>
@@ -56,192 +97,192 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Ogólne" ToolTip="Podstawowe funkcje programu">
-                <MenuItem Header="Słowniki">
-                    <MenuItem Header="Kontrahenci" InputGestureText="Ctrl + K"/>
-                    <MenuItem Header="Nowy kontrachent" InputGestureText="Ctrl + Shift + K"/>
-                    <MenuItem Header="Pracownicy" InputGestureText="Ctrl + E"/>
-                    <MenuItem Header="Cennik"/>
-                    <MenuItem Header="Nowy towar" InputGestureText="Ctrl + Shift + T"/>
-                    <MenuItem Header="Grupy towarowe"/>
-                    <MenuItem Header="Rabaty">
+                <MenuItem Header="Słowniki" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Kontrahenci" InputGestureText="Ctrl + K" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Nowy kontrachent" InputGestureText="Ctrl + Shift + K" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Pracownicy" InputGestureText="Ctrl + E" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Cennik" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Nowy towar" InputGestureText="Ctrl + Shift + T" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Grupy towarowe" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Rabaty" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\rabat.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Kategorie"/>
-                    <MenuItem Header="Atrybuty"/>
-                    <MenuItem Header="Wymiary opisu analitycznego"/>
-                    <MenuItem Header="Inne"/>
+                    <MenuItem Header="Kategorie" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Atrybuty" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Wymiary opisu analitycznego" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Inne" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Przesyłki">
-                    <MenuItem Header="Nadanie przesyłki"/>
+                <MenuItem Header="Przesyłki" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Nadanie przesyłki" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Waluty">
-                    <MenuItem Header="Kursy walut"/>
-                    <MenuItem Header="Pobieranie wskaźników"/>
-                    <MenuItem Header="Kalkulator wynagrodzeń"/>
+                <MenuItem Header="Waluty" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Kursy walut" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Pobieranie wskaźników" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Kalkulator wynagrodzeń" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Dane osobowe">
-                    <MenuItem Header="Rejestry" InputGestureText="Ctrl + R"/>
-                    <MenuItem Header="Słowniki"/>
-                    <MenuItem Header="Anonimizacja danych osobowych"/>
+                <MenuItem Header="Dane osobowe" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Rejestry" InputGestureText="Ctrl + R" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Słowniki" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Anonimizacja danych osobowych" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Handel" ToolTip="Handel z magazynem">
-                <MenuItem Header="Handel">
-                    <MenuItem Header="Faktury" InputGestureText="Ctrl + F"/>
-                    <MenuItem Header="Nowa faktura" InputGestureText="Ctrl + Shift + F"/>
-                    <MenuItem Header="Paragony" InputGestureText="Ctrl + Q"/>
-                    <MenuItem Header="Nowy paragon" InputGestureText="Ctrl + Shift + Q"/>
-                    <MenuItem Header="Rezerwacje odbiorcy"/>
-                    <MenuItem Header="Faktury Pro Forma"/>
-                    <MenuItem Header="Sprzedaż dedykowana"/>
-                    <MenuItem Header="Faktury zakupu"/>
-                    <MenuItem Header="Zamówienia u dostawcy"/>
-                    <MenuItem Header="Inne"/>
+                <MenuItem Header="Handel" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Faktury" InputGestureText="Ctrl + F" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Nowa faktura" InputGestureText="Ctrl + Shift + F" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Paragony" InputGestureText="Ctrl + Q" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Nowy paragon" InputGestureText="Ctrl + Shift + Q" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Rezerwacje odbiorcy" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Faktury Pro Forma" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Sprzedaż dedykowana" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Faktury zakupu" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Zamówienia u dostawcy" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Inne" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Magazyn">
-                    <MenuItem Header="Zasoby" InputGestureText="Ctrl + Enter + R"/>
-                    <MenuItem Header="Raport braków"/>
-                    <MenuItem Header="Wydania zewnętrzne"/>
-                    <MenuItem Header="Przyjęcia zewnęrzne"/>
-                    <MenuItem Header="Inne"/>
+                <MenuItem Header="Magazyn" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Zasoby" InputGestureText="Ctrl + Enter + R" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Raport braków" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Wydania zewnętrzne" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Przyjęcia zewnęrzne" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Inne" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Więcej funkcji">
-                    <MenuItem Header="Uruchom sprzedaż w Internecie"/>
-                    <MenuItem Header="Pracuj mobilnie"/>
+                <MenuItem Header="Więcej funkcji" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Uruchom sprzedaż w Internecie" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Pracuj mobilnie" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Kasa,Bank" ToolTip="Zarządzanie finansami">
-                <MenuItem Header="Kasa i Bank">
-                    <MenuItem Header="Rejestry kasowe/bankowe" InputGestureText="Ctrl + Enter + B"/>
-                    <MenuItem Header="Raporty kasowe/bankowe"/>
-                    <MenuItem Header="Zapisy kasowe/bankowe"/>
-                    <MenuItem Header="Preliminiarz płatności"/>
+                <MenuItem Header="Kasa i Bank" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Rejestry kasowe/bankowe" InputGestureText="Ctrl + Enter + B" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Raporty kasowe/bankowe" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Zapisy kasowe/bankowe" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Preliminiarz płatności" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Rozliczenia">
-                    <MenuItem Header="Rozliczenia podmiotu"/>
-                    <MenuItem Header="Dokumenty nierozliczone"/>
-                    <MenuItem Header="Dokumenty rozliczone"/>
-                    <MenuItem Header="Dokumenty kompensat"/>
-                    <MenuItem Header="Różnice kursowe"/>
+                <MenuItem Header="Rozliczenia" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Rozliczenia podmiotu" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Dokumenty nierozliczone" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Dokumenty rozliczone" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Dokumenty kompensat" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Różnice kursowe" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Dokumenty">
-                    <MenuItem Header="Noty odsetkowe"/>
-                    <MenuItem Header="Ponaglenia zapłaty"/>
-                    <MenuItem Header="Potwierdzenia salda"/>
+                <MenuItem Header="Dokumenty" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Noty odsetkowe" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Ponaglenia zapłaty" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Potwierdzenia salda" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Rejestry VAT" ToolTip="Ewidencja i rozliczenie VAT">
-                <MenuItem Header="Rejestry VAT">
-                    <MenuItem Header="Rejestry VAT" InputGestureText="Ctrl + Enter + V"/>
-                    <MenuItem Header="Struktura zakupów"/>
-                    <MenuItem Header="Ewidencja dodatkowa"/>
+                <MenuItem Header="Rejestry VAT" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Rejestry VAT" InputGestureText="Ctrl + Enter + V" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Struktura zakupów" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Ewidencja dodatkowa" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="JPK" ToolTip="Tworzenie i wysyłka plików JPK">
-                <MenuItem Header="JPK">
-                    <MenuItem Header="Pliki JPK" InputGestureText="Ctrl + J">
+                <MenuItem Header="JPK" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Pliki JPK" InputGestureText="Ctrl + J" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\plikJPK.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Import do rej. VAT"/>
+                    <MenuItem Header="Import do rej. VAT" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Pomoc">
-                    <MenuItem Header="Informacje o JPK"/>
+                <MenuItem Header="Pomoc" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Informacje o JPK" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Narzędzia" ToolTip="Narzędzia programu">
-                <MenuItem Header="Konfiguracja">
-                    <MenuItem Header="Blokady dostępu" InputGestureText="Ctrl + Shift + B"/>
-                    <MenuItem Header="Filtry obowiązkowe GenRap"/>
-                    <MenuItem Header="Data bieżąca"/>
-                    <MenuItem Header="Data dla wydruków"/>
+                <MenuItem Header="Konfiguracja" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Blokady dostępu" InputGestureText="Ctrl + Shift + B" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Filtry obowiązkowe GenRap" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Data bieżąca" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Data dla wydruków" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Fiskalne">
-                    <MenuItem Header="Otwarcie szuflady"/>
-                    <MenuItem Header="Raport fiskalny"/>
+                <MenuItem Header="Fiskalne" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Otwarcie szuflady" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Raport fiskalny" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Narzędzia">
-                    <MenuItem Header="Kopia bezpieczeństwa">
+                <MenuItem Header="Narzędzia" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Kopia bezpieczeństwa" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\kopiaZapasowa.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Testy integralności"/>
-                    <MenuItem Header="Korekty danych"/>
-                    <MenuItem Header="Serwer bazy danych" InputGestureText="Ctrl + Shift + D">
+                    <MenuItem Header="Testy integralności" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Korekty danych" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Serwer bazy danych" InputGestureText="Ctrl + Shift + D" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\serwerDB.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Kopiowanie danych" InputGestureText="Ctrl + Shift + C"/>
+                    <MenuItem Header="Kopiowanie danych" InputGestureText="Ctrl + Shift + C" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Importy">
-                    <MenuItem Header="Importy"/>
+                <MenuItem Header="Importy" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Importy" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Wymiana danych">
-                    <MenuItem Header="Detal/Mobile Sprzedaż"/>
+                <MenuItem Header="Wymiana danych" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Detal/Mobile Sprzedaż" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Historia">
-                    <MenuItem Header="Historia zmian" InputGestureText="Ctrl + H"/>
+                <MenuItem Header="Historia" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Historia zmian" InputGestureText="Ctrl + H" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Widok" ToolTip="Dostosuj widok programu">
-                <MenuItem Header="Skórki">
+                <MenuItem Header="Skórki" Style="{StaticResource DropMenu}">
                     <MenuItem Width="20" Height="20" Margin="2" Background="Black"/>
                     <MenuItem Width="20" Height="20" Margin="2" Background="White"/>
                     <MenuItem Width="20" Height="20" Margin="2" Background="Azure"/>
                 </MenuItem>
-                <MenuItem Header="Czcionka">
-                    <MenuItem Header="Zmień ustawienia czcionki">
+                <MenuItem Header="Czcionka" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Zmień ustawienia czcionki" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\czcionka.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Ustawienia okien">
-                    <MenuItem Header="Reset"/>
-                    <MenuItem Header="Reset aktywnego okna" IsEnabled="False"/>
-                    <MenuItem Header="Import"/>
-                    <MenuItem Header="Eksport"/>
+                <MenuItem Header="Ustawienia okien" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Reset" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Reset aktywnego okna" IsEnabled="False" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Import" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Eksport" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="Ustawienia ogólne">
-                    <MenuItem Header="Praca w trybie jednego okna"/>
-                    <MenuItem Header="Filtrowanie list metodą `zaczyna się od`"/>
-                    <MenuItem Header="Duże ikony w nawigacji"/>
-                    <MenuItem Header="Efekty animacji"/>
-                    <MenuItem Header="Wyróżnienie aktywnego okna"/>
-                    <MenuItem Header="Podświetlenie zamknięcia programu"/>
-                    <MenuItem Header="Pokaż Menu Nawigacji"/>
+                <MenuItem Header="Ustawienia ogólne" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Praca w trybie jednego okna" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Filtrowanie list metodą `zaczyna się od`" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Duże ikony w nawigacji" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Efekty animacji" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Wyróżnienie aktywnego okna" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Podświetlenie zamknięcia programu" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Pokaż Menu Nawigacji" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Pomoc" ToolTip="Uzyskaj dostęp do pomocy technicznej">
-                <MenuItem Header="Pomoc">
-                    <MenuItem Header="Pomoc" InputGestureText="F1">
+                <MenuItem Header="Pomoc" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="Pomoc" InputGestureText="F1" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\pomoc.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Biuletyny"/>
-                    <MenuItem Header="Filmy instruktażowe"/>
-                    <MenuItem Header="FAQ">
+                    <MenuItem Header="Biuletyny" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Filmy instruktażowe" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="FAQ" Style="{StaticResource DropMenuII}">
                         <MenuItem.Icon>
                             <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\faq.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Szkolenia"/>
-                    <MenuItem Header="System Obsługi Zgłoszeń"/>
-                    <MenuItem Header="Pomoc zdalna"/>
+                    <MenuItem Header="Szkolenia" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="System Obsługi Zgłoszeń" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Pomoc zdalna" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
-                <MenuItem Header="O programie">
-                    <MenuItem Header="O programie"/>
-                    <MenuItem Header="Rejestracja programu"/>
+                <MenuItem Header="O programie" Style="{StaticResource DropMenu}">
+                    <MenuItem Header="O programie" Style="{StaticResource DropMenuII}"/>
+                    <MenuItem Header="Rejestracja programu" Style="{StaticResource DropMenuII}"/>
                 </MenuItem>
             </MenuItem>
         </Menu>
-        <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="2">
+        <ToolBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
             <ToggleButton Width="38" Height="38" Margin="2" ToolTip="Wstecz">
                 <Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\Grafika\strzałka.png"/>
             </ToggleButton>
@@ -284,26 +325,26 @@
 
 
         </ToolBar>
-        <Border Grid.Row="2" Grid.Column="0">
-            <HeaderedContentControl Header="Operacje"/>
+        <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource Operacje}">
+            <HeaderedContentControl Header="Operacje" Style="{StaticResource Header}"/>
 
         </Border>
-        <Border Grid.Row="2" Grid.Column="1">
-            <HeaderedContentControl Header="Przestrzeń robocza"/>
-        
+        <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource PrzestrzenRobocza}">
+            <HeaderedContentControl Header="Przestrzeń robocza" Style="{StaticResource Header}"/>
+
         </Border>
         <StatusBar Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
             <StatusBarItem>
-                <TextBlock>Damian Judka</TextBlock>
+                <TextBlock Style="{StaticResource Header}">Damian Judka</TextBlock>
             </StatusBarItem>
             <Separator/>
             <StatusBarItem>
-                <TextBlock>ZSEM</TextBlock>
-                
+                <TextBlock Style="{StaticResource Header}">ZSEM</TextBlock>
+
             </StatusBarItem>
 
         </StatusBar>
 
-        
+
     </Grid>
 </Window>
