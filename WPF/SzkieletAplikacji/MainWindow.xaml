@@ -1,0 +1,86 @@
+﻿<Window x:Class="SzkieletAplikacji.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SzkieletAplikacji"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--<Grid>
+        <StackPanel Margin="10">
+            <Button>Kliknij mnie</Button>
+            <Button Style="{StaticResource SpecialButton}">Kliknij mnie Przycisk nr 2</Button>
+        </StackPanel>
+    </Grid>-->
+    <!--<Grid>
+        <StackPanel Margin="10">
+            <Button Style="{StaticResource StylPrzycisku}">Przycisk 1</Button>
+            <Label Content="TekstLabel" Style="{StaticResource StylPrzycisku}"/>
+            <CheckBox Content="Tak" Style="{StaticResource StylPrzycisku}"/>
+            <Button Style="{StaticResource StylPrzycisku}">Przycisk 2</Button>
+            <Button>Przycisk 3</Button>
+            <Button>Przycisk 4</Button>
+        </StackPanel>
+    </Grid>-->
+    
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Background" Value="Azure"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Foreground" Value="Gray"/>
+           
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="StylPrzycisku">
+            <Setter Property="Control.Width" Value="150"/>
+            <Setter Property="Control.Height" Value="50"/>
+            <Setter Property="Control.Background" Value="LightBlue"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Style="{StaticResource StylPrzycisku}">Przycisk 1</Button>
+            <Label Content="TekstLabel" Style="{StaticResource StylPrzycisku}"/>
+            <CheckBox Content="Tak" Style="{StaticResource StylPrzycisku}"/>
+            <Button>Przycisk 2</Button>
+            <Button Style="{StaticResource SpecialButton}">Przycisk 3</Button>
+            <Button Style="{StaticResource ostateczny}">Przycisk 4</Button>
+        </StackPanel>
+    </Grid>
+    
+    <!--<StackPanel Margin="10">
+        <StackPanel.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="Foreground" Value="Gray"/>
+                <Setter Property="Background" Value="Aqua"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="Width" Value="150"/>
+                <Setter Property="Height" Value="50"/>
+            </Style>
+        </StackPanel.Resources>
+        <TextBlock>Header 1</TextBlock>
+        <TextBlock>Header 2</TextBlock>
+        <TextBlock Foreground="Blue">Header 3</TextBlock>
+    </StackPanel>-->
+    
+    <!--STYL DLA POJEDYNCZEJ KOMÓRKI-->
+    <!--<Grid Margin="10">
+        <TextBlock Text="Testowanie styli">
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.FontSize" Value="30"/>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>-->
+        
+        
+</Window>
