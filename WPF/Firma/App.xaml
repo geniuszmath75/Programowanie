@@ -4,6 +4,96 @@
              xmlns:local="clr-namespace:Firma"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="ColumnDefinition" x:Key="ColumnSeparacyjnaStandardowa">
+            <Setter Property="Width" Value="5"/>
+        </Style>
+        
+        <!--TabItem-->
+        <Style x:Key="TabItemStandardowy" TargetType="TabItem">
+            <Setter Property="Background" Value="#0bc9da"/>
+        </Style>
+
+        <!--Button-->
+        <Style x:Key="ButtonStandardowy" TargetType="Button">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="2.6"/>
+            <Setter Property="Background" Value="#0ce4ae"/>
+        </Style>
+        <!--ButtonDocument-->
+        <Style x:Key="ButtonDocument" TargetType="Button">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Background" Value="#0ce4ae"/>
+        </Style>
+
+        <!--ComboBox-->
+        <Style x:Key="ComboBoxStandardowy" TargetType="ComboBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="2.6"/>
+            <Setter Property="Background" Value="#00ff99"/>
+        </Style>
+
+        <!--ComboBox2-->
+        <Style x:Key="ComboBox2" TargetType="ComboBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="2.6"/>
+            <Setter Property="Background" Value="#00ff99"/>
+        </Style>
+
+        <!--Expander-->
+        <Style x:Key="ExpanderRozwiniety" TargetType="Expander">
+            <Setter Property="Background" Value="#4dbbff"/>
+            <Setter Property="IsExpanded" Value="True"/>
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+
+        <!--TextBox1-->
+        <Style x:Key="TextBoxStandardowy" TargetType="TextBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Margin" Value="2.6"/>
+        </Style>
+
+        <!--TextBox2-->
+        <Style x:Key="TextBox2" TargetType="TextBox">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Margin" Value="2.6"/>
+        </Style>
+
+        <!--TextBox3-->
+        <Style x:Key="TextBox3" TargetType="TextBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Margin" Value="4"/>
+        </Style>
+
+        <!--DatePicker-->
+        <Style x:Key="DatePickerStandardowy" TargetType="DatePicker">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="0, 4"/>
+        </Style>
+        
+        <!--StatusBar-->
+        <Style x:Key="StatusBarStandardowy" TargetType="StatusBar">
+            <Setter Property="Background" Value="#45b2ed"/>
+        </Style>
+        
+        <!--Border-->
+        <Style x:Key="Border1" TargetType="Border">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#4dbbff"/>
+        </Style>
+        
+        <!--Label-->
+        <Style x:Key="LabelStandardowy" TargetType="Label">
+            <Setter Property="Background" Value="#4dbbff"/>
+        </Style>
+        
     </Application.Resources>
 </Application>

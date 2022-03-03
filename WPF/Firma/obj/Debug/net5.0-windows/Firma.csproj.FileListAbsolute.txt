@@ -20,3 +20,4 @@ C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\obj\Debug\net5.0-windows\
 C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\obj\Debug\net5.0-windows\ref\Firma.dll
 C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\obj\Debug\net5.0-windows\Firma.pdb
 C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\obj\Debug\net5.0-windows\Firma.genruntimeconfig.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\Firma\obj\Debug\net5.0-windows\App.baml

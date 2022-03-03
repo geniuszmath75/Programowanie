@@ -46,7 +46,7 @@
             <Setter Property="Control.Background" Value="#00ccff"/>
         </Style>
     </Window.Resources>
-    
+
     <Grid Background="LightBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -330,18 +330,367 @@
 
         </Border>
         <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource PrzestrzenRobocza}">
-            <HeaderedContentControl Header="Przestrzeń robocza" Style="{StaticResource Header}"/>
+            <HeaderedContentControl Header="Przestrzeń robocza" Style="{StaticResource Header}">
+
+                <Grid>
+                    <TabControl Background="#4dbbff">
+                        <TabItem Header="Ogólne" Style="{StaticResource TabItemStandardowy}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.ColumnSpan="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="116.794"/>
+                                        <ColumnDefinition Width="41.206"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Grid.Row="0" Grid.Column="0" Content="Dokument" Style="{StaticResource ButtonDocument}" Grid.ColumnSpan="2" Margin="4,4,4,4"></Button>
+                                    <ComboBox Grid.Row="0" Grid.Column="3" Style="{StaticResource ComboBox2}" Margin="3,4,2,4">
+                                        <ComboBoxItem IsSelected="True">FA</ComboBoxItem>
+                                    </ComboBox>
+                                    <Label Grid.Column="4" Content="Numer:" VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="5,0,5,0"/>
+                                    <TextBox Grid.Row="0" Grid.Column="7" Style="{StaticResource TextBox3}" Margin="4,4,4,4">FA</TextBox>
+                                    <ComboBox Grid.Row="0" Grid.Column="9" Style="{StaticResource ComboBox2}" Margin="2,4,3,4">
+                                        <ComboBoxItem IsSelected="True">AUTO</ComboBoxItem>
+                                    </ComboBox>
+                                    <TextBox Grid.Row="0" Grid.Column="11" Style="{StaticResource TextBox3}" Margin="4,4,4,4">2010</TextBox>
+
+
+                                </Grid>
+
+
+
+
+
+
+
+
+                            </Grid>
+
+
+
+                            <!--<TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        -->
+                            <!--<Image Source="C:\Users\Janus\OneDrive\Pulpit\programowanie\WPF\TabControl\Grafika\otwórz.png"/>-->
+                            <!--
+                        <TextBlock Text="Ogólne" Foreground="Black"/>
+                    </StackPanel>
+                </TabItem.Header>-->
+                        </TabItem>
+
+                        <TabItem Header="Kontrahent" Style="{StaticResource TabItemStandardowy}">
+                            <!--Początek sekcji nagłówek-->
+
+                            <Expander Grid.Row="1" Header="Nagłówek" Style="{StaticResource ExpanderRozwiniety}">
+                                <!--Definiujemy nowy Grid na kontrahenta, kategorie i magazyn-->
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <!--Definiujemy kolumny do stworzenia odpowiednich pól oraz kolumny separacyjne-->
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--Wiersz 0-->
+                                    <Button Grid.Column="0" Grid.Row="0" Content="Kontrahent" Style="{StaticResource ButtonStandardowy}"/>
+                                    <ComboBox Grid.Row="0" Grid.Column="2" Style="{StaticResource ComboBoxStandardowy}">
+                                        <ComboBoxItem IsSelected="True" Content="Krzysiek"/>
+                                        <ComboBoxItem Content="Kontrahent 2"/>
+                                        <ComboBoxItem Content="Kontrahent 3"/>
+                                    </ComboBox>
+                                    <TextBox Grid.Row="0" Grid.Column="4" Style="{StaticResource TextBoxStandardowy}">Krzysztof Mirek Sp. Zoo</TextBox>
+
+                                    <!--Wiersz 1-->
+                                    <Button Grid.Row="1" Grid.Column="0" Content="Kategoria" Style="{StaticResource ButtonStandardowy}"/>
+                                    <ComboBox Grid.Row="1" Grid.Column="2" Style="{StaticResource ComboBoxStandardowy}">
+                                        <ComboBoxItem IsSelected="True" Content="Przychody"/>
+                                        <ComboBoxItem Content="Rozchody"/>
+                                        <ComboBoxItem Content="Inne"/>
+                                    </ComboBox>
+                                    <TextBox Grid.Row="1" Grid.Column="4" Style="{StaticResource TextBoxStandardowy}">Przychody</TextBox>
+
+                                    <!--Wiersz 2-->
+                                    <Button Grid.Row="3" Grid.Column="0" Content="Magazyn" Style="{StaticResource ButtonStandardowy}"/>
+                                    <ComboBox Grid.Row="3" Grid.Column="2" Style="{StaticResource ComboBoxStandardowy}">
+                                        <ComboBoxItem IsSelected="True">Domyślny</ComboBoxItem>
+                                        <ComboBoxItem>Inny</ComboBoxItem>
+                                    </ComboBox>
+                                    <TextBox Grid.Row="3" Grid.Column="4" Style="{StaticResource TextBoxStandardowy}"></TextBox>
+
+                                </Grid>
+
+                            </Expander>
+                        </TabItem>
+
+
+                        <TabItem Header="Płatność" Style="{StaticResource TabItemStandardowy}">
+                            <Expander Grid.Row="2" Header="Daty i wartości" Style="{StaticResource ExpanderRozwiniety}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="10"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--Wiersz 0-->
+                                    <Label Grid.Row="0" Grid.Column="0" Content="Data wystawienia:"/>
+                                    <DatePicker Grid.Row="0" Grid.Column="2" Style="{StaticResource DatePickerStandardowy}"/>
+                                    <Label Grid.Row="0" Grid.Column="4" Content="Rabat:"/>
+                                    <ComboBox Grid.Row="0" Grid.Column="6" Margin="0, 4">
+                                        <ComboBoxItem IsSelected="True">5,00%</ComboBoxItem>
+                                        <ComboBoxItem>10,00%</ComboBoxItem>
+                                        <ComboBoxItem>15,00%</ComboBoxItem>
+                                    </ComboBox>
+
+                                    <!--Wiersz 1-->
+                                    <Label Grid.Row="1" Grid.Column="0" Content="Data sprzedaży:"/>
+                                    <DatePicker Grid.Row="1" Grid.Column="2" Style="{StaticResource DatePickerStandardowy}"/>
+                                    <Label Grid.Row="1" Grid.Column="4" Content="Płatności:"/>
+                                    <ComboBox Grid.Row="1" Grid.Column="6" Margin="0, 4">
+                                        <ComboBoxItem IsSelected="True">Przelew</ComboBoxItem>
+                                        <ComboBoxItem>Gotówka</ComboBoxItem>
+                                        <ComboBoxItem>Czek</ComboBoxItem>
+                                        <ComboBoxItem>Inne</ComboBoxItem>
+                                    </ComboBox>
+
+                                    <!--Wiersz 2-->
+                                    <Label Grid.Row="2" Grid.Column="0" Content="Faktura liczona od:"/>
+                                    <ComboBox Grid.Row="2" Grid.Column="2" Style="{StaticResource ComboBox2}">
+                                        <ComboBoxItem IsSelected="True">Netto</ComboBoxItem>
+                                        <ComboBoxItem>Brutto</ComboBoxItem>
+                                    </ComboBox>
+                                    <Label Grid.Row="2" Grid.Column="4" Content="Termin płatności:"/>
+                                    <DatePicker Grid.Row="2" Grid.Column="6" Style="{StaticResource DatePickerStandardowy}"/>
+
+                                    <!--Wiersz 3-->
+
+                                    <Label Grid.Row="5" Grid.Column="0" Content="Netto:"/>
+                                    <TextBox Grid.Row="5" Grid.Column="2" Style="{StaticResource TextBox2}"/>
+
+                                    <!--Wiersz 4-->
+
+                                    <Label Grid.Row="6" Grid.Column="0" Content="Razem:"/>
+                                    <TextBox Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBox2}"/>
+
+                                    <!--Wiersz 5-->
+                                    <Label Grid.Row="7" Grid.Column="0" Content="Zapłacono:"/>
+                                    <TextBox Grid.Row="7" Grid.Column="2" Style="{StaticResource TextBox2}"/>
+
+                                    <!--Wiersz 6-->
+                                    <Label Grid.Row="8" Grid.Column="0" Content="Pozostało:"/>
+                                    <TextBox Grid.Row="8" Grid.Column="2"  Style="{StaticResource TextBox2}"/>
+
+                                </Grid>
+
+
+                            </Expander>
+                        </TabItem>
+
+
+                        <TabItem Header="Dokumenty" Style="{StaticResource TabItemStandardowy}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Style="{StaticResource ColumnSeparacyjnaStandardowa}"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Content="Numer: " Style="{StaticResource LabelStandardowy}"/>
+                                <TextBox Grid.Row="0" Grid.Column="2" Style="{StaticResource TextBox3}">3</TextBox>
+                                <Label Grid.Row="0" Grid.Column="4" Content="Typ: " Style="{StaticResource LabelStandardowy}"/>
+                                <ComboBox Grid.Row="0" Grid.Column="6" Style="{StaticResource ComboBox2}">
+                                    <ComboBoxItem IsSelected="True">KOR</ComboBoxItem>
+                                    <ComboBoxItem>FWS</ComboBoxItem>
+                                    <ComboBoxItem>FWZ</ComboBoxItem>
+                                    <ComboBoxItem>VAT</ComboBoxItem>
+                                </ComboBox>
+                                <Label Grid.Row="0" Grid.Column="8" Content="Data dokumentu: " Style="{StaticResource LabelStandardowy}"/>
+                                <DatePicker Grid.Row="0" Grid.Column="10" Style="{StaticResource DatePickerStandardowy}"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Atrybuty" Style="{StaticResource TabItemStandardowy}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl >Lp.</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Atrybut</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Wartość</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Doklejać do opisu</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Przenosić na transakcję</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="5" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Drukować</HeaderedContentControl>
+                                </Border>
+
+                                <TextBox Grid.Row="1" Grid.Column="0">1</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="1">DATA</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="2">11.06.2021</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="3">Nie</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="4">Nie</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="5">Nie</TextBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Kaucje" Style="{StaticResource TabItemStandardowy}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl >Termin</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Forma pł.</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Waluta</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Kwota</HeaderedContentControl>
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource Border1}">
+                                    <HeaderedContentControl>Rozliczono</HeaderedContentControl>
+                                </Border>
+
+                                <TextBox Grid.Row="1" Grid.Column="0">11.06.2021</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="1">przelew</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="2">PLN</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="3">30,00</TextBox>
+                                <TextBox Grid.Row="1" Grid.Column="4">0,00</TextBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+
+            </HeaderedContentControl>
 
         </Border>
-        <StatusBar Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
-            <StatusBarItem>
-                <TextBlock Style="{StaticResource Header}">Damian Judka</TextBlock>
-            </StatusBarItem>
-            <Separator/>
-            <StatusBarItem>
-                <TextBlock Style="{StaticResource Header}">ZSEM</TextBlock>
+        <StatusBar Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource StatusBarStandardowy}">
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Lp.</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Kod</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Nazwa</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Ilość</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Jm</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Rabat</TextBlock>
+                </StatusBarItem>
+                <Separator/>
 
-            </StatusBarItem>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Cena</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">Wartość</TextBlock>
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem>
+                    <TextBlock Style="{StaticResource Header}">%Marży</TextBlock>
+                </StatusBarItem>
 
         </StatusBar>
 
