@@ -1,0 +1,36 @@
+﻿<Window x:Class="Baiding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Baiding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel 
+        DataContext="{x:Reference Slider}">
+
+        <TextBox
+            Background="Azure"
+            Width="250"
+            Height="{Binding Value}"/>
+
+        <Label
+            
+            x:Name="lblTekst"
+            HorizontalAlignment="Center"
+            FontSize="{Binding Value}"
+            Margin="{Binding Value}"
+            Content="Testujemy powiązanie danych"/>
+
+        <Slider
+            x:Name="Slider"
+            Minimum="1"
+            Maximum="61"
+            Value="30"
+            Background="Gold"/>
+
+
+    </StackPanel>
+    
+    
+</Window>
