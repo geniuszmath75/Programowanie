@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EdytorTekstu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -27,12 +27,17 @@
         <TextBlock 
             Grid.Column="0" 
             Grid.ColumnSpan="5"
+            Typography.Capitals="{Binding Source={x:Reference ASC}, Path=Value}"
+            Opacity="{Binding Source={x:Reference SlajderOpacity}, Path=Value}"
+            FontWeight="{Binding Source={x:Reference listBox}, Path=SelectedValue, Mode=OneWay}"
             Foreground="{Binding Source={x:Reference KomboBox}, Path=Text}"
             FontSize="{Binding Source={x:Reference Slajder}, Path=Value}"
-            Background="{Binding Source={x:Reference Slajder2}, Path=Value}"
+            FontFamily="{Binding Source={x:Reference ListBoks}, Path=SelectedValue, Mode=OneWay}"
             Style="{StaticResource TextBlock}"
-            Text="{Binding Source={x:Reference TekstBox}, Path=Text}">
+            Text="{Binding Source={x:Reference TekstBox}, Path=Text}"
+            >
         </TextBlock>
+
         <Label
             Grid.Row="1"
             Content="Kolor tekstu:"
@@ -64,12 +69,16 @@
             Content="Czcionka:"
             Style="{StaticResource Label}"/>
 
-        <ListBox
+        <ListView
+            x:Name="ListBoks"
             Grid.Row="2"
             Grid.Column="4"
+            FontSize="16"
+            ItemsSource="{x:Static Fonts.SystemFontFamilies}"
+            SelectedIndex="0"
             >
-            
-        </ListBox>
+
+        </ListView>
 
         <Label
             Grid.Row="3"
@@ -81,9 +90,9 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
@@ -91,7 +100,8 @@
                     x:Name="Slajder2"
                     Minimum="0"
                     Maximum="255"
-                    Value="0"/>
+                    Value="0"
+                    />
 
                 <Slider
                     Grid.Row="2"
@@ -120,7 +130,9 @@
             Grid.Row="4"
             Grid.Column="2"
             Text="Nowy Tekst do edytowania"
-            Style="{StaticResource TextBox}"/>
+            Style="{StaticResource TextBox}"
+            
+            />
 
         <Label
             Grid.Row="3"
@@ -128,11 +140,68 @@
             Content="Krój czcionki:"
             Style="{StaticResource Label}"/>
 
-        <ListBox
+        <ListBox x:Name="listBox"
             Grid.Row="4"
             Grid.Column="5"
-            SelectionMode="Single">
+            FontSize="16"
+            SelectedIndex="0"
+            >
+            <ListBoxItem>Regular</ListBoxItem>
+            <ListBoxItem >Bold</ListBoxItem>
+            <ListBoxItem >Medium</ListBoxItem>
+            <ListBoxItem >Thin</ListBoxItem>
         </ListBox>
+
+        <Label
+            Grid.Row="5"
+            Style="{StaticResource Label}"
+            Content="Przezroczystość tekstu:">
+            
+        </Label>
+        <Slider
+            x:Name="SlajderOpacity"
+            Grid.Row="6"
+            Minimum="0"
+            Maximum="1"
+            Value="1"
+            Style="{StaticResource Slider}">
+        </Slider>
+
+        <Label
+            Grid.Row="5"
+            Grid.Column="5"
+            Style="{StaticResource Label}"
+            Content="Ustawienia liter:">
+
+        </Label>
+        <StackPanel Grid.Row="6" Grid.Column="5" x:Name="PanelLitery">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <CheckBox
+                    x:Name="UC"
+                    Content="UPPER CASE">
+                </CheckBox>
+                <CheckBox
+                    x:Name="ASC"
+                    Grid.Row="2"
+                    Content="AllSmallCaps">
+                </CheckBox>
+                <CheckBox
+                    x:Name="MS"
+                    Grid.Row="5"
+                    Content="M O N O S P A C E"
+                    >
+                </CheckBox>
+                
+            </Grid>
+        </StackPanel>
     </Grid>
-        
+
 </Window>
