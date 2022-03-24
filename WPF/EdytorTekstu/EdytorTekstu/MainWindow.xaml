@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EdytorTekstu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="800">
+        Title="MainWindow" Height="650" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -24,15 +24,15 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock 
+        <TextBlock
+            x:Name="Blok"
             Grid.Column="0" 
             Grid.ColumnSpan="5"
-            Typography.Capitals="{Binding Source={x:Reference ASC}, Path=Value}"
             Opacity="{Binding Source={x:Reference SlajderOpacity}, Path=Value}"
-            FontWeight="{Binding Source={x:Reference listBox}, Path=SelectedValue, Mode=OneWay}"
             Foreground="{Binding Source={x:Reference KomboBox}, Path=Text}"
-            FontSize="{Binding Source={x:Reference Slajder}, Path=Value}"
+            FontWeight="{Binding Source={x:Reference KomboBox2}, Path=SelectedItem.Content}"
             FontFamily="{Binding Source={x:Reference ListBoks}, Path=SelectedValue, Mode=OneWay}"
+            TextDecorations="{Binding Source={x:Reference addSettings}, Path=SelectedItem.Content}"
             Style="{StaticResource TextBlock}"
             Text="{Binding Source={x:Reference TekstBox}, Path=Text}"
             >
@@ -100,7 +100,8 @@
                     x:Name="Slajder2"
                     Minimum="0"
                     Maximum="255"
-                    Value="0"
+                    Background="Red"
+                    ValueChanged="Slajder2_ValueChanged"
                     />
 
                 <Slider
@@ -108,14 +109,16 @@
                     x:Name="Slajder3"
                     Minimum="0"
                     Maximum="255"
-                    Value="0"/>
+                    Background="Green" Height="18" VerticalAlignment="Top"
+                    ValueChanged="Slajder3_ValueChanged"/>
 
                 <Slider
                     Grid.Row="4"
                     x:Name="Slajder4"
                     Minimum="0"
                     Maximum="255"
-                    Value="0"/>
+                    Background="Blue"
+                    ValueChanged="Slajder4_ValueChanged"/>
             </Grid>
         </StackPanel>
 
@@ -140,23 +143,22 @@
             Content="Krój czcionki:"
             Style="{StaticResource Label}"/>
 
-        <ListBox x:Name="listBox"
+        <ComboBox 
+            x:Name="KomboBox2"
             Grid.Row="4"
             Grid.Column="5"
-            FontSize="16"
-            SelectedIndex="0"
+            Style="{StaticResource ComboBox}"
             >
-            <ListBoxItem>Regular</ListBoxItem>
-            <ListBoxItem >Bold</ListBoxItem>
-            <ListBoxItem >Medium</ListBoxItem>
-            <ListBoxItem >Thin</ListBoxItem>
-        </ListBox>
+            <ComboBoxItem IsSelected="True">Medium</ComboBoxItem>
+            <ComboBoxItem>Bold</ComboBoxItem>
+            <ComboBoxItem>ExtraBold</ComboBoxItem>
+        </ComboBox>
 
         <Label
             Grid.Row="5"
             Style="{StaticResource Label}"
             Content="Przezroczystość tekstu:">
-            
+
         </Label>
         <Slider
             x:Name="SlajderOpacity"
@@ -171,37 +173,20 @@
             Grid.Row="5"
             Grid.Column="5"
             Style="{StaticResource Label}"
-            Content="Ustawienia liter:">
+            Content="Dodatkowe ustawienia:">
 
         </Label>
-        <StackPanel Grid.Row="6" Grid.Column="5" x:Name="PanelLitery">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="10"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="10"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+        <ComboBox
+            x:Name="addSettings"
+            Grid.Row="6"
+            Grid.Column="5"
+            Style="{StaticResource ComboBox}">
 
-                <CheckBox
-                    x:Name="UC"
-                    Content="UPPER CASE">
-                </CheckBox>
-                <CheckBox
-                    x:Name="ASC"
-                    Grid.Row="2"
-                    Content="AllSmallCaps">
-                </CheckBox>
-                <CheckBox
-                    x:Name="MS"
-                    Grid.Row="5"
-                    Content="M O N O S P A C E"
-                    >
-                </CheckBox>
-                
-            </Grid>
-        </StackPanel>
+            <ComboBoxItem IsSelected="True" Content="None"/>
+            <ComboBoxItem Content="Underline"/>
+            <ComboBoxItem Content="StrikeThrough"/>
+            <ComboBoxItem Content="Overline"/>
+        </ComboBox>
     </Grid>
 
 </Window>

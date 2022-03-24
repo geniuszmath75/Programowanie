@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +23,32 @@ namespace EdytorTekstu
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public void ZmienKolor()
+        {
+            byte r = (byte)Slajder2.Value;
+            byte g = (byte)Slajder3.Value;
+            byte b = (byte)Slajder4.Value;
+
+            Color c = Color.FromRgb(r, g, b);
+            SolidColorBrush cb = new SolidColorBrush(c);
+            Blok.Background = cb;
+        }
+
+        private void Slajder2_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            ZmienKolor();
+        }
+
+        private void Slajder3_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            ZmienKolor();
+        }
+
+        private void Slajder4_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            ZmienKolor();
         }
     }
 }
