@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\bin\Debug\netstandard2.0\ProfilUzytkownika.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\bin\Debug\netstandard2.0\ProfilUzytkownika.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\bin\Debug\netstandard2.0\ProfilUzytkownika.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\refint\ProfilUzytkownika.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ProfilUzytkownika.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\ProfilUzytkownika\ProfilUzytkownika\obj\Debug\netstandard2.0\ref\ProfilUzytkownika.dll
