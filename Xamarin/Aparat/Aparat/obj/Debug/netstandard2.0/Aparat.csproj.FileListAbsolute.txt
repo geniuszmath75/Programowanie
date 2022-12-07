@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\bin\Debug\netstandard2.0\Aparat.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\bin\Debug\netstandard2.0\Aparat.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\bin\Debug\netstandard2.0\Aparat.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\refint\Aparat.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\Aparat.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Aparat\Aparat\obj\Debug\netstandard2.0\ref\Aparat.dll

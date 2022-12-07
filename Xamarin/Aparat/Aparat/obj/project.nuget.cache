@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QPO66skTjyjT2Wl3mUmw6porHZBFFI6qqET47XKZLP5Y7G2Lk3SnNJVDOMO5HSC2rZVDnrugrNz08182O/YjLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Janus\\OneDrive\\Pulpit\\programowanie\\Xamarin\\Aparat\\Aparat\\Aparat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Janus\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Janus\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Janus\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Janus\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\Janus\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Janus\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
