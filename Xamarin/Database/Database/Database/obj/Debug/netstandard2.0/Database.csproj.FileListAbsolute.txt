@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\bin\Debug\netstandard2.0\Database.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\bin\Debug\netstandard2.0\Database.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\bin\Debug\netstandard2.0\Database.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\refint\Database.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\Database.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Database\Database\Database\obj\Debug\netstandard2.0\ref\Database.dll
