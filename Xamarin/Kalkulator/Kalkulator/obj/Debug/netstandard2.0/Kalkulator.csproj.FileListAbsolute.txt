@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\bin\Debug\netstandard2.0\Kalkulator.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\bin\Debug\netstandard2.0\Kalkulator.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\bin\Debug\netstandard2.0\Kalkulator.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\refint\Kalkulator.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\Kalkulator.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Kalkulator\Kalkulator\obj\Debug\netstandard2.0\ref\Kalkulator.dll

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulator.App">
+    <Application.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        <Style TargetType="Button" x:Key="numbers">
+            <Setter Property="BackgroundColor" Value="Blue"/>
+        </Style>
+        <Style TargetType="Button" x:Key="basicOperators">
+            <Setter Property="BackgroundColor" Value="LightGreen"/>
+        </Style>
+        <Style TargetType="Button" x:Key="equals">
+            <Setter Property="BackgroundColor" Value="Bisque"/>
+        </Style>
+        <Style TargetType="Button" x:Key="other">
+            <Setter Property="BackgroundColor" Value="Orange"/>
+        </Style>
+    </Application.Resources>
+</Application>

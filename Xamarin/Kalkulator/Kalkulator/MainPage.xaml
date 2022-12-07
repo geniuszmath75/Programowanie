@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulator.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Entry Text="0" x:Name="equation" HorizontalTextAlignment="End"/>
+        <Label Text="0" x:Name="equationChar" TextColor="Gray" HorizontalTextAlignment="End"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="X" x:Name="iks" Style="{StaticResource other}" Grid.Row="0" Grid.Column="0" Clicked="ClearChar" />
+            <Button Text="C" x:Name="delete" Style="{StaticResource other}" Grid.Row="0" Grid.Column="1" Clicked="Clear" />
+            <Button Text="1/x" Grid.Row="0" Grid.Column="2" x:Name="reciprocal" Style="{StaticResource other}" Clicked="OperatorHandling" />
+            <Button Text="/" Grid.Row="0" Grid.Column="3" x:Name="divided" Style="{StaticResource basicOperators}" Clicked="OperatorHandling" />
+
+            <Button Text="x^2" Grid.Row="1" Grid.Column="0" x:Name="power" Style="{StaticResource other}" Clicked="OperatorHandling" />
+            <Button Text="√x" Grid.Row="1" Grid.Column="1" x:Name="root" Style="{StaticResource other}" Clicked="OperatorHandling" />
+            <Button Text="." Grid.Row="1" Grid.Column="2" x:Name="dot" Style="{StaticResource other}" Clicked="Fraction" />
+            <Button Text="*" Grid.Row="1" Grid.Column="3" x:Name="multiplication" Style="{StaticResource basicOperators}" Clicked="OperatorHandling" />
+            
+            <Button Text="1" Grid.Row="2" Grid.Column="0" x:Name="one" Style="{StaticResource numbers}" Clicked="number"/>
+            <Button Text="2" Grid.Row="2" Grid.Column="1" x:Name="two" Style="{StaticResource numbers}"  Clicked="number"/>
+            <Button Text="3" Grid.Row="2" Grid.Column="2" x:Name="three" Style="{StaticResource numbers}"  Clicked="number"/>
+            <Button Text="+" Grid.Row="2" Grid.Column="3" x:Name="plus" Style="{StaticResource basicOperators}" Clicked="OperatorHandling" />
+
+            <Button Text="4" Grid.Row="3" Grid.Column="0" x:Name="four" Style="{StaticResource numbers}"  Clicked="number"/>
+            <Button Text="5" Grid.Row="3" Grid.Column="1" x:Name="five" Style="{StaticResource numbers}"  Clicked="number"/>
+            <Button Text="6"  Grid.Row="3" Grid.Column="2" x:Name="six" Style="{StaticResource numbers}" Clicked="number"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="3" x:Name="minus" Style="{StaticResource basicOperators}" Clicked="OperatorHandling" />
+        </Grid>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="7" Style="{StaticResource numbers}" x:Name="seven" Clicked="number" HorizontalOptions="FillAndExpand"/>
+            <Button Text="8" Style="{StaticResource numbers}" x:Name="eight" Clicked="number" HorizontalOptions="FillAndExpand"/>
+            <Button Text="9" Style="{StaticResource numbers}" x:Name="nine" Clicked="number" HorizontalOptions="FillAndExpand"/>
+            <Button Text="=" x:Name="equals" Style="{StaticResource equals}" Clicked="OperatorResult" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <Button Text="0" Style="{StaticResource numbers}" x:Name="zero" Clicked="number" />
+        
+    </StackLayout>
+</ContentPage>
