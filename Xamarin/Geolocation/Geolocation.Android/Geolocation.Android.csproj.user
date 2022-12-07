@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SelectedDevice>nowy_emulator</SelectedDevice>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <ActiveDebugProfile>Nowy Emulator %28Android 10.0 - API 29%29</ActiveDebugProfile>
+    <DefaultDevice>nowy_emulator</DefaultDevice>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
+  </PropertyGroup>
+</Project>

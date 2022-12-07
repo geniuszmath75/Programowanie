@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\bin\Debug\netstandard2.0\Geolocation.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\bin\Debug\netstandard2.0\Geolocation.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\bin\Debug\netstandard2.0\Geolocation.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\refint\Geolocation.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\Geolocation.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Geolocation\Geolocation\obj\Debug\netstandard2.0\ref\Geolocation.dll
