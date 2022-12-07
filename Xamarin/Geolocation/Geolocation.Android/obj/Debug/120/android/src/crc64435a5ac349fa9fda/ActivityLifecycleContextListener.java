@@ -40,8 +40,9 @@ public class ActivityLifecycleContextListener
 	public ActivityLifecycleContextListener ()
 	{
 		super ();
-		if (getClass () == ActivityLifecycleContextListener.class)
+		if (getClass () == ActivityLifecycleContextListener.class) {
 			mono.android.TypeManager.Activate ("Plugin.CurrentActivity.ActivityLifecycleContextListener, Plugin.CurrentActivity", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

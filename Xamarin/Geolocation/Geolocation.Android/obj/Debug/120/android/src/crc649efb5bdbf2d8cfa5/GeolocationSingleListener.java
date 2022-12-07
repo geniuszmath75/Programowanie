@@ -24,8 +24,9 @@ public class GeolocationSingleListener
 	public GeolocationSingleListener ()
 	{
 		super ();
-		if (getClass () == GeolocationSingleListener.class)
+		if (getClass () == GeolocationSingleListener.class) {
 			mono.android.TypeManager.Activate ("Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

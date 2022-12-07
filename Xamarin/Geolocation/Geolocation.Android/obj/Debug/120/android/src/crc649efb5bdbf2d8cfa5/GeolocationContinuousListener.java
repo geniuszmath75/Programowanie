@@ -24,8 +24,9 @@ public class GeolocationContinuousListener
 	public GeolocationContinuousListener ()
 	{
 		super ();
-		if (getClass () == GeolocationContinuousListener.class)
+		if (getClass () == GeolocationContinuousListener.class) {
 			mono.android.TypeManager.Activate ("Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 
