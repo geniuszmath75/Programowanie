@@ -1,0 +1,16 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Baza danych\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
