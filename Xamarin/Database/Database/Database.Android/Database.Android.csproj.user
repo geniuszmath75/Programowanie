@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>nowy_emulator</SelectedDevice>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>nowy_emulator</ActiveDebugProfile>
+    <ActiveDebugProfile>Nowy Emulator %28Android 10.0 - API 29%29</ActiveDebugProfile>
     <DefaultDevice>nowy_emulator</DefaultDevice>
   </PropertyGroup>
 </Project>
