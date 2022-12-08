@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Listy.MainPage">
+
+    <StackLayout x:Name="parent">
+        <!--Ważne w celu ustawienia 
+                                    odpowiedniego butonów lub innych 
+                                    kontrolek generowanych 
+                                    w kodzie – należy je umieścić w tym 
+                                    Layoucie.-->
+        <Label Text="Notatnik" />
+        <Label Text="Podaj nazwę pliku"/>
+        <Entry x:Name="nazwa"/>
+        <Label Text="Podaj notatkę"/>
+        <Editor x:Name="editor" HeightRequest="300"></Editor>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--<Button Clicked="" Text="Otwórz" />-->
+            <Button Clicked="zapisz" Text="Zapisz" Grid.Column="1"/>
+            <Button Clicked="usun" Text="Usuń" Grid.Column="2"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Picker x:Name="pickerPliki"
+        Title="Wybierz Plik"
+        TitleColor="Red"
+        SelectedIndexChanged="OnPickerSelectedIndexChanged">
+        </Picker>
+        <!--
+        <Picker Title="Select a monkey"
+        TitleColor="Red"
+        SelectedIndexChanged="OnPickerSelectedIndexChanged">
+        <Picker.Items>
+        <x:String>Baboon</x:String>
+        <x:String>Capuchin Monkey</x:String>
+        <x:String>Blue Monkey</x:String>
+        <x:String>Squirrel Monkey</x:String>
+        <x:String>Golden Lion Tamarin</x:String>
+        <x:String>Howler Monkey</x:String>
+        <x:String>Japanese Macaque</x:String>
+        </Picker.Items>
+        </Picker>
+        -->
+    </StackLayout>
+
+</ContentPage>

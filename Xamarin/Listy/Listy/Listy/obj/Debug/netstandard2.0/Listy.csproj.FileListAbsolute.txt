@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\refint\Listy.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\Listy.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\bin\Debug\netstandard2.0\Listy.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\bin\Debug\netstandard2.0\Listy.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\bin\Debug\netstandard2.0\Listy.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Listy\Listy\Listy\obj\Debug\netstandard2.0\ref\Listy.dll
