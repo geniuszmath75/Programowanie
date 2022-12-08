@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PizzaXam.MainPage">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="Title" Style="{StaticResource Title}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">Program do przeliczania wyboru pizzy:</Label>
+            <Label x:Name="Lab1" Grid.Row="1" Grid.Column="0" Style="{StaticResource labelInfo}">Podaj średnicę pierwszej pizzy:</Label>
+            <Entry x:Name="diameter1" Grid.Row="1" Grid.Column="1"></Entry>
+            <Label x:Name="Lab2" Grid.Row="2" Grid.Column="0" Style="{StaticResource labelInfo}">Podaj cenę pierwszej pizzy:</Label>
+            <Entry x:Name="price1" Grid.Row="2" Grid.Column="1"></Entry>
+            <Label x:Name="Lab3" Grid.Row="3" Grid.Column="0" Style="{StaticResource labelInfo}">Podaj średnicę drugiej pizzy:</Label>
+            <Entry x:Name="diameter2" Grid.Row="3" Grid.Column="1"></Entry>
+            <Label x:Name="Lab4" Grid.Row="4" Grid.Column="0" Style="{StaticResource labelInfo}">Podaj cenę drugiej pizzy:</Label>
+            <Entry x:Name="price2" Grid.Row="4" Grid.Column="1"></Entry>
+
+            <Label x:Name="labWynik" Grid.Row="5" Grid.Column="0" Text="Powierzchnia pierwszej pizzy za 1zł: " Style="{StaticResource resultLabel}"></Label>
+            <Label x:Name="wynik" Grid.Row="5" Grid.Column="1" Style="{StaticResource resultLabel}"></Label>
+            <Label x:Name="labWynik2" Grid.Row="6" Grid.Column="0" Text="Powierzchnia drugiej pizzy za 1zł: " Style="{StaticResource resultLabel}"></Label>
+            <Label x:Name="wynik2" Grid.Row="6" Grid.Column="1" Style="{StaticResource resultLabel}"></Label>
+            <Label x:Name="wynik3" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource resultLabel}"></Label>
+            <Button x:Name="oblicz" Grid.Row="8" Grid.Column="0" Text="OBLICZ" Clicked="oblicz_Clicked" Style="{StaticResource btn1}"></Button>
+            <Button x:Name="reset" Grid.Row="8" Grid.Column="1" Text="CZYŚĆ" Clicked="reset_Clicked" Style="{StaticResource btn2}"></Button>
+    </Grid>
+
+        
+
+</ContentPage>

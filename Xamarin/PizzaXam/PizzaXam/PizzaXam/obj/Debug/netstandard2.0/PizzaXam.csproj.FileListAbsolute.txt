@@ -1,0 +1,15 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\bin\Debug\netstandard2.0\PizzaXam.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\bin\Debug\netstandard2.0\PizzaXam.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\bin\Debug\netstandard2.0\PizzaXam.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\refint\PizzaXam.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\PizzaXam.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\PizzaXam\PizzaXam\obj\Debug\netstandard2.0\ref\PizzaXam.dll
