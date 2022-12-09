@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewForValue.MainPage">
+    <ScrollView>
+        <StackLayout x:Name="layout">
+            <Label FontSize="Title"
+                   Text="CHECK BOX"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+            <CheckBox x:Name="showPudzian"
+                IsChecked="false"
+                HorizontalOptions="Center"/>
+            <CheckBox x:Name="checkBoxTwo"
+                Color="Blue"
+                IsChecked="false"
+                HorizontalOptions="Center"/>
+            <Image x:Name="pudzianImage"
+                IsVisible="{Binding Source={x:Reference showPudzian}, Path=IsChecked}"
+                Source="https://tse1.mm.bing.net/th?id=OIP.NrNWI3TIErfNkP4x00Be6AAAAA" HeightRequest="300"/>
+
+
+
+
+
+            <Label FontSize="Title"
+                   Text="SLIDER"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+
+            <Label x:Name="label1"
+                   Text="PRZYKŁADOWY TEKST"
+                   HorizontalOptions="Center"
+                   FontSize="{Binding Source={x:Reference slider}, Path=Value}"
+                   TextColor="Black"
+               />
+
+
+            <Slider x:Name="slider"
+                    Maximum="60"
+                    Minimum="10"
+                    Value="20"
+                    ValueChanged="changeFontSize"
+                    MinimumTrackColor="Blue"
+                    ThumbColor="Green"
+                    MaximumTrackColor="Red"
+            />
+
+            <Label x:Name="label2"
+                   Text="{Binding Source={x:Reference slider},
+                              Path=Value,
+                              StringFormat='Wartość czcionki wynosi: {0}'}"
+                    HorizontalOptions="Center"
+                   FontSize="20"
+                />
+
+
+
+
+
+
+            <Label FontSize="Title"
+                   Text="STEPPER"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+            <Stepper x:Name="stepper"
+                Minimum="50"
+                Maximum="150"
+                Increment="5"
+                Value="75"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="stepperLabel" HorizontalOptions="Center"/>
+
+
+
+
+            <Label FontSize="Title"
+                   Text="SWITCH"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Jasnozielone tło:"
+                       FontSize="20"
+                       />
+                <Switch x:Name="switch1"
+                        IsToggled="False"
+                        Grid.Column="1"
+                        Toggled="changeTheme"
+                        />
+
+                <Label Text="Change my mind:"
+                       FontSize="20"
+                       Grid.Row="1"
+                       />
+                <Switch x:Name="switch2"
+                        IsToggled="False"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Toggled="imageVisible"
+                        />
+
+                <Label Text="Wyłącz przełączanie:"
+                       FontSize="20"
+                       Grid.Row="2"
+                       />
+
+                <Switch x:Name="switch3"
+                        IsToggled="True"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Toggled="turnOffSwitching"
+                        />
+            </Grid>
+
+            <Image x:Name="obrazek"
+                   Source="https://cdn-japantimes.com/wp-content/uploads/2022/04/np_file_150539.jpeg"
+                   IsVisible="false"
+                       />
+
+
+
+
+
+
+            <Label FontSize="Title"
+                   Text="DATA PICKER"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+            <DatePicker x:Name="timePicker"
+                Format="D"
+                VerticalOptions="Center"
+                MinimumDate="01/01/2018"
+                MaximumDate="12/31/2025"
+                Date="03/17/2022"
+            />
+            <Label x:Name="timeLabel"
+                Text="{Binding Date, StringFormat='{0:MMMM dd, yyyy}'}"
+                HorizontalOptions="Center"
+                FontSize="Title"/>
+            <Label x:Name="timeLabelTwo"
+                HorizontalOptions="Center"
+                FontSize="Title"/>
+            <Label x:Name="timeLabelThree"
+                HorizontalOptions="Center"
+                FontSize="Title"/>
+
+
+            <Label FontSize="Title"
+                   Text="KALKULATOR DNI"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+
+            <Label Text="Ile dni pomiędzy datami"
+               Margin="0, 20"
+               HorizontalTextAlignment="Center" />
+
+            <Label Text="Początkowa data:" />
+
+            <DatePicker x:Name="startDatePicker"
+                        Format="D"
+                        Margin="30, 0, 0, 30"
+                        DateSelected="OnDateSelected" />
+
+            <Label Text="Końcowa data:" />
+
+            <DatePicker x:Name="endDatePicker"
+                        MinimumDate="{Binding Source={x:Reference startDatePicker},
+                                                Path=Date}"
+                        Format="D"
+                        Margin="30, 0, 0, 30"
+                        DateSelected="OnDateSelected" />
+
+            <StackLayout Orientation="Horizontal"
+                            Margin="0, 0, 0, 30">
+                <Label Text="Uwzględnij oba dni: "
+                        VerticalOptions="Center" />
+                <Switch x:Name="includeSwitch"
+                        Toggled="OnSwitchToggled" />
+            </StackLayout>
+
+            <Label x:Name="resultLabel"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center" />
+
+
+
+
+
+            <Label FontSize="Title"
+                   Text="TIME PICKER"
+                   TextColor="White"
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   />
+
+            <Label Text="Wybierz godzinę zakończenia timera" />
+
+            <TimePicker x:Name="_timePicker"
+                    Time="11:00:00"
+                    Format="t"
+                    PropertyChanged="OnTimePickerPropertyChanged" />
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Włącz timer:" />
+                <Switch x:Name="_switch"
+                    HorizontalOptions="EndAndExpand"
+                    Toggled="OnSwitchToggledTime" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+
