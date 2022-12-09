@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Logowanie.RegistrationPage"
+             Title="Zarejestruj się">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Style="{StaticResource Title}" Text="Rejestruj konto"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj email:"/>
+                <Entry x:Name="email" Style="{StaticResource registerEntry}" Placeholder="Wprowadź email"/>
+                <Label x:Name="errorE" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj hasło:"/>
+                <Entry x:Name="password1" Style="{StaticResource registerEntry}" Placeholder="Wprowadź hasło: " IsPassword="True"/>
+                <Label x:Name="errorH" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Powtórz hasło:"/>
+                <Entry x:Name="password2" Style="{StaticResource registerEntry}" Placeholder="Wprowadź hasło:" IsPassword="True"/>
+                <Label x:Name="errorH2" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj imię:"/>
+                <Entry x:Name="firstname" Style="{StaticResource registerEntry}" Placeholder="Wprowadź imię:"/>
+                <Label x:Name="errorI" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj nazwisko:"/>
+                <Entry x:Name="lastname" Style="{StaticResource registerEntry}" Placeholder="Wprowadź nazwisko:"/>
+                <Label x:Name="errorN" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj PESEL:"/>
+                <Entry x:Name="pesel" Style="{StaticResource registerEntry}" Placeholder="Wprowadź PESEL:"/>
+                <Label x:Name="errorP" Style="{StaticResource Error}" TextColor="Red"/>
+                <Label Style="{StaticResource registerLabel}" Text="Podaj kod pocztowy:"/>
+                <Entry x:Name="posterCode" Style="{StaticResource registerEntry}" Placeholder="Wprowadź kod pocztowy:"/>
+                <Label x:Name="errorPC" Style="{StaticResource Error}" TextColor="Red"/>
+                <Button Style="{StaticResource register}" Text="Zatwierdź" Clicked="walidacja_Clicked"/>
+                <Label x:Name="correct" Style="{StaticResource Error}" TextColor="Green"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

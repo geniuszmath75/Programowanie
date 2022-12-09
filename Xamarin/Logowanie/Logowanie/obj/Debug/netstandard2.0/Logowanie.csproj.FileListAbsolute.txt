@@ -1,0 +1,17 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.csproj.AssemblyReference.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.AssemblyInfoInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.AssemblyInfo.cs
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.csproj.CoreCompileInputs.cache
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\bin\Debug\netstandard2.0\Logowanie.deps.json
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\bin\Debug\netstandard2.0\Logowanie.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\bin\Debug\netstandard2.0\Logowanie.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\refint\Logowanie.dll
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\Logowanie.pdb
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie\obj\Debug\netstandard2.0\ref\Logowanie.dll

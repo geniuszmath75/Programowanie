@@ -1,0 +1,1 @@
+C:\Users\Janus\OneDrive\Pulpit\programowanie\Xamarin\Logowanie\Logowanie.UWP\Logowanie.UWP.csproj;x64

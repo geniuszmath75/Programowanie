@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Logowanie.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="login_icon.png"/>
+            <Label Style="{StaticResource loginLabel}" Text="Login"/>
+            <Entry x:Name="login" Placeholder="Login"/>
+            <Label Style="{StaticResource loginLabel}" Text="Hasło"/>
+            <Entry x:Name="password" Placeholder="Hasło" IsPassword="True"/>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nie masz konta? "/>
+                        <Span Text="Zarejestruj się!" FontAttributes="Bold">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="rejestruj"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button x:Name="loguj" Style="{StaticResource loguj}" Text="Zaloguj" Clicked="loguj_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
